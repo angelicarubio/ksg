@@ -1,4 +1,4 @@
-<section id="landing__about">
+<section id="sobre-mi" class="landing__about">
   <div class="l-main-wrapper">
     <div class="wrapper">
       <img

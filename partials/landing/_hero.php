@@ -1,4 +1,4 @@
-<section id="landing__hero">
+<section class="landing__hero">
   <div class="l-main-wrapper">
     <div class="el-wrapper">
       <img

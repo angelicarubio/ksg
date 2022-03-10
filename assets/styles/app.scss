@@ -4,6 +4,7 @@
 @import 'common/fonts';
 @import 'common/base';
 @import 'common/link';
+@import 'common/tabs';
 
 // Layout
 
@@ -12,4 +13,6 @@
 // Theme > Landing
 
 @import 'theme/landing/hero';
+@import 'theme/landing/about-bg-wrapper';
 @import 'theme/landing/about';
+@import 'theme/landing/work';

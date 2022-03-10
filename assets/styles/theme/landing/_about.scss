@@ -1,0 +1,28 @@
+section#landing__about {
+  background-image: url(/assets/img/landing/img_about-bg.png);
+  background-size: 100% auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+  .l-main-wrapper {
+    padding: 200px 0 90px 0;
+    border-bottom: 1px solid #FFF;
+    .wrapper {
+      display: flex;
+      img {
+        align-self: flex-start;
+        min-width: 380px;
+        margin: 0 100px 0 50px;
+      }
+      div {
+        width: calc(100% - 480px);
+      }
+    }
+    .contact-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding-left: 240px;
+    }
+  }
+}

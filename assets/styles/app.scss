@@ -3,6 +3,7 @@
 @import 'common/vars';
 @import 'common/fonts';
 @import 'common/base';
+@import 'common/link';
 
 // Layout
 
@@ -11,3 +12,4 @@
 // Theme > Landing
 
 @import 'theme/landing/hero';
+@import 'theme/landing/about';

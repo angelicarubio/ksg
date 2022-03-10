@@ -1,4 +1,117 @@
-body {
-  background: #000; }
+@font-face {
+  font-family: Gotham;
+  src: url(/assets/fonts/Gotham-Black.otf);
+  font-weight: bolder;
+  font-style: normal; }
+@font-face {
+  font-family: Gotham;
+  src: url(/assets/fonts/Gotham-BlackItalic.otf);
+  font-weight: bolder;
+  font-style: italic; }
+@font-face {
+  font-family: Gotham;
+  src: url(/assets/fonts/Gotham-Bold.otf);
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: Gotham;
+  src: url(/assets/fonts/Gotham-BoldItalic.otf);
+  font-weight: bold;
+  font-style: italic; }
+@font-face {
+  font-family: Gotham;
+  src: url(/assets/fonts/Gotham-Book.otf);
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: Gotham;
+  src: url(/assets/fonts/Gotham-BookItalic.otf);
+  font-weight: normal;
+  font-style: italic; }
+@font-face {
+  font-family: Gotham;
+  src: url(/assets/fonts/Gotham-Light.otf);
+  font-weight: lighter;
+  font-style: normal; }
+@font-face {
+  font-family: Gotham;
+  src: url(/assets/fonts/Gotham-LightItalic.otf);
+  font-weight: lighter;
+  font-style: italic; }
+html, body {
+  background: #000;
+  color: #FFF;
+  font-family: Gotham, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  padding: 0;
+  margin: 0; }
+
+* {
+  box-sizing: border-box; }
+
+section {
+  display: block;
+  width: 100%; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+.l-main-wrapper {
+  width: 90vw;
+  max-width: 960px;
+  margin: 0 auto; }
+
+section#landing__hero {
+  background-image: url(/assets/img/landing/img_hero.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  max-height: 700px; }
+  section#landing__hero .l-main-wrapper {
+    position: relative;
+    height: 100%; }
+    section#landing__hero .l-main-wrapper .el-wrapper {
+      width: 100%;
+      height: 100%; }
+      section#landing__hero .l-main-wrapper .el-wrapper img {
+        position: absolute; }
+        section#landing__hero .l-main-wrapper .el-wrapper img.el_k {
+          top: 10%;
+          left: 0; }
+        section#landing__hero .l-main-wrapper .el-wrapper img.el_s {
+          top: 50%;
+          right: 0; }
+        section#landing__hero .l-main-wrapper .el-wrapper img.el_g {
+          bottom: 0;
+          left: 0;
+          transform: translateY(20%); }
+        section#landing__hero .l-main-wrapper .el-wrapper img.el_logo {
+          top: 45%;
+          left: -60px; }
+    section#landing__hero .l-main-wrapper nav {
+      position: absolute;
+      top: 10%;
+      right: 0; }
+      section#landing__hero .l-main-wrapper nav ul li {
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: right;
+        font-size: 25px; }
+        section#landing__hero .l-main-wrapper nav ul li:not(:last-of-type) {
+          margin-bottom: 10px; }
+        section#landing__hero .l-main-wrapper nav ul li a {
+          display: block;
+          transition: all 0.4s ease-out; }
+          section#landing__hero .l-main-wrapper nav ul li a:hover {
+            transform: translateX(70px);
+            color: #2A1BC5; }
 
 /*# sourceMappingURL=app.css.map */

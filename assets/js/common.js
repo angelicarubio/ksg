@@ -1,6 +1,8 @@
 $(document).ready(function() {
   toggleTab();
   initTimeline();
+  setCurrentYear();
+  backToTop();
 });
 
 function toggleTab() {
@@ -60,4 +62,16 @@ function setTimelineContent(carousel) {
   content.find('h1').html(slide.attr('data-title'));
   content.find('p').html(slide.attr('data-description'));
   content.find('h2').html(slide.attr('data-subtitle'));
+}
+
+function setCurrentYear() {
+  $('.year').text(new Date().getFullYear());
+}
+
+function backToTop() {
+  $('.to-top').click(function() {
+    const body = $('html, body');
+
+    body.stop().animate({ scrollTop: 0 }, 1900, 'swing');;
+  });
 }

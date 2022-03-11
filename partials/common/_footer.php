@@ -1,3 +1,33 @@
+<footer>
+  <div class="l-main-wrapper">
+    <button type="button" class="to-top">
+      <img src="/assets/img/icons/ic_arrow_white.svg" alt="Volver arriba">
+    </button>
+    <div class="wrapper">
+      <aside>
+        <img src="/assets/img/landing/logo_ksg_white.svg" alt="KSG">
+      </aside>
+      <aside>
+        <img src="/assets/img/landing/logo_white.svg" alt="Karina Salazar González">
+        <div class="social">
+          <a href="#">
+            <img src="/assets/img/icons/ic_facebook_white.svg" alt="Facebook">
+          </a>
+          <a href="#">
+            <img src="/assets/img/icons/ic_instagram_white.svg" alt="Instagram">
+          </a>
+          <a href="#">
+            <img src="/assets/img/icons/ic_linkedin_white.svg" alt="LinkedIn">
+          </a>
+        </div>
+      </aside>
+    </div>
+    <div class="legal">
+      <p>KSG ® | Copyright <span class="year"></span> © | SPGG, Nuevo León, México</p>
+    </div>
+  </div>
+</footer>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="/assets/js/common.js"></script>

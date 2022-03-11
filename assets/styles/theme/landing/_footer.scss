@@ -1,0 +1,52 @@
+footer {
+  background-image: url(/assets/img/landing/img_footer-bg.png);
+  background-size: cover;
+  .l-main-wrapper {
+    position: relative;
+    .to-top {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: $primary;
+    }
+    .wrapper {
+      display: flex;
+      align-items: center;
+      padding: 40px 0;
+      border-bottom: 1px solid #FFF;
+      aside {
+        display: flex;
+        align-items: center;
+        &:first-of-type {
+          border-right: 1px solid #FFF;
+          padding: 30px 80px 30px 0;
+        }
+        &:last-of-type {
+          width: 100%;
+          justify-content: space-around;
+          .social {
+            display: grid;
+            align-items: center;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 40px;
+          }
+        }
+      }
+    }
+    .legal {
+      padding: 17px 0 11px 0;
+      p {
+        font-size: 14px;
+        line-height: 14px;
+        text-align: center;
+      }
+    }
+  }
+}

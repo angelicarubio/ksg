@@ -550,4 +550,57 @@ section.landing__contact .l-main-wrapper form button[type=submit] {
   margin: 20px auto 0 auto;
 }
 
+footer {
+  background-image: url(/assets/img/landing/img_footer-bg.png);
+  background-size: cover;
+}
+footer .l-main-wrapper {
+  position: relative;
+}
+footer .l-main-wrapper .to-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #C355D0;
+}
+footer .l-main-wrapper .wrapper {
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+  border-bottom: 1px solid #FFF;
+}
+footer .l-main-wrapper .wrapper aside {
+  display: flex;
+  align-items: center;
+}
+footer .l-main-wrapper .wrapper aside:first-of-type {
+  border-right: 1px solid #FFF;
+  padding: 30px 80px 30px 0;
+}
+footer .l-main-wrapper .wrapper aside:last-of-type {
+  width: 100%;
+  justify-content: space-around;
+}
+footer .l-main-wrapper .wrapper aside:last-of-type .social {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 40px;
+}
+footer .l-main-wrapper .legal {
+  padding: 17px 0 11px 0;
+}
+footer .l-main-wrapper .legal p {
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+}
+
 /*# sourceMappingURL=app.css.map */

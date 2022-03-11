@@ -176,6 +176,41 @@ input:focus, textarea:focus {
   grid-column-gap: 20px;
 }
 
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #FFF;
+  z-index: 10;
+  transform: translateY(-100%);
+  transition: transform 0.2s ease;
+}
+nav.--visible {
+  transform: none;
+}
+nav .l-main-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+nav .l-main-wrapper ul {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-column-gap: 20px;
+}
+nav .l-main-wrapper ul li a {
+  color: #BDBDBD;
+  font-size: 16px;
+  line-height: 20px;
+  transition: color 0.2s ease;
+}
+nav .l-main-wrapper ul li a:hover {
+  color: #C355D0;
+}
+
 section.landing__hero {
   background-image: url(/assets/img/landing/img_hero.png);
   background-size: cover;
@@ -210,25 +245,25 @@ section.landing__hero .l-main-wrapper .el-wrapper img.el_logo {
   top: 45%;
   left: -60px;
 }
-section.landing__hero .l-main-wrapper nav {
+section.landing__hero .l-main-wrapper .wrapper {
   position: absolute;
   top: 10%;
   right: 0;
 }
-section.landing__hero .l-main-wrapper nav ul li {
+section.landing__hero .l-main-wrapper .wrapper ul li {
   font-weight: bold;
   text-transform: uppercase;
   text-align: right;
   font-size: 25px;
 }
-section.landing__hero .l-main-wrapper nav ul li:not(:last-of-type) {
+section.landing__hero .l-main-wrapper .wrapper ul li:not(:last-of-type) {
   margin-bottom: 10px;
 }
-section.landing__hero .l-main-wrapper nav ul li a {
+section.landing__hero .l-main-wrapper .wrapper ul li a {
   display: block;
   transition: all 0.4s ease-out;
 }
-section.landing__hero .l-main-wrapper nav ul li a:hover {
+section.landing__hero .l-main-wrapper .wrapper ul li a:hover {
   transform: translateX(70px);
   color: #2A1BC5;
 }

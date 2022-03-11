@@ -18,7 +18,7 @@
         alt="Karina Salazar González"
         class="el_logo">
     </div>
-    <nav>
+    <div class="wrapper">
       <ul>
         <li>
           <a href="#sobre-mi" class="scroll-to">Sobre mí</a>
@@ -39,6 +39,6 @@
           <a href="#contacto" class="scroll-to">Contacto</a>
         </li>
       </ul>
-    </nav>
+    </div>
   </div>
 </section>

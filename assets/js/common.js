@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  showNav();
   toggleTab();
   initTimeline();
   setCurrentYear();
@@ -86,6 +87,20 @@ function scrollToSection() {
 
     const distance = $($(this).attr('href')).offset().top;
 
-    body.stop().animate({ scrollTop: distance }, 1000, 'swing');
+    body.stop().animate({ scrollTop: distance - 60 }, 1000, 'swing');
+  });
+}
+
+function showNav() {
+  if ($(window).scrollTop() > 100) {
+    $('nav').addClass('--visible');
+  }
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 100) {
+      $('nav').addClass('--visible');
+    } else {
+      $('nav').removeClass('--visible');
+    }
   });
 }

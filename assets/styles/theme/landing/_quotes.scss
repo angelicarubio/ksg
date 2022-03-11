@@ -1,0 +1,25 @@
+section.landing__quotes {
+  background-image: url(/assets/img/landing/img_quotes-bg.png);
+  background-size: cover;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  height: 370px;
+  padding: 25px 0;
+  overflow: hidden;
+  div {
+    display: inline-block;
+    h1 {
+      font-size: 45px;
+      line-height: 45px;
+      font-weight: $bold;
+      margin-bottom: 10px;
+    }
+    h2 {
+      color: #FFF;
+      text-transform: none;
+      opacity: 0.4;
+      text-align: center;
+    }
+  }
+}

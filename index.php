@@ -8,4 +8,5 @@
     echo '</section>';
     include($_SERVER['DOCUMENT_ROOT'].'/partials/landing/_achievments.php');
     include($_SERVER['DOCUMENT_ROOT'].'/partials/landing/_timeline.php');
+    include($_SERVER['DOCUMENT_ROOT'].'/partials/landing/_quotes.php');
     include($_SERVER['DOCUMENT_ROOT'].'/partials/common/_footer.php');

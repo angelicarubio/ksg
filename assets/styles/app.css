@@ -360,6 +360,7 @@ section.landing__achievments .l-main-wrapper .wrapper div img {
 section.landing__timeline {
   position: relative;
   height: 470px;
+  overflow: hidden;
 }
 section.landing__timeline .slick {
   position: absolute;
@@ -462,6 +463,32 @@ section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots li b
   margin-bottom: 13px;
   pointer-events: none;
   z-index: 2;
+}
+
+section.landing__quotes {
+  background-image: url(/assets/img/landing/img_quotes-bg.png);
+  background-size: cover;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  height: 370px;
+  padding: 25px 0;
+  overflow: hidden;
+}
+section.landing__quotes div {
+  display: inline-block;
+}
+section.landing__quotes div h1 {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+section.landing__quotes div h2, section.landing__quotes div section.landing__ventures .l-main-wrapper .tab-wrapper .tab-buttons .tab-toggle, section.landing__ventures .l-main-wrapper .tab-wrapper .tab-buttons section.landing__quotes div .tab-toggle, section.landing__quotes div section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots li button, section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots li section.landing__quotes div button {
+  color: #FFF;
+  text-transform: none;
+  opacity: 0.4;
+  text-align: center;
 }
 
 /*# sourceMappingURL=app.css.map */

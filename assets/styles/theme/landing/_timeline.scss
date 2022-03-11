@@ -1,6 +1,7 @@
 section.landing__timeline {
   position: relative;
   height: 470px;
+  overflow: hidden;
   .slick {
     position: absolute;
     top: 0;

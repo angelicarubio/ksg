@@ -87,7 +87,7 @@
   ];
 ?>
 
-<section class="landing__timeline">
+<section id="mi-recorrido" class="landing__timeline">
   <div class="slick">
     <?php
       foreach ($slides as $slide) {

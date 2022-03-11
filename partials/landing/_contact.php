@@ -1,4 +1,4 @@
-<section class="landing__contact">
+<section id="contacto" class="landing__contact">
   <div class="l-main-wrapper">
     <h2>Contacto</h2>
     <p>Desbloquea tu potencial</p>

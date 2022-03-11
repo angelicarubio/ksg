@@ -3,6 +3,7 @@ $(document).ready(function() {
   initTimeline();
   setCurrentYear();
   backToTop();
+  scrollToSection();
 });
 
 function toggleTab() {
@@ -69,9 +70,22 @@ function setCurrentYear() {
 }
 
 function backToTop() {
-  $('.to-top').click(function() {
-    const body = $('html, body');
+  const body = $('html, body');
 
-    body.stop().animate({ scrollTop: 0 }, 1900, 'swing');;
+  $('.to-top').click(function() {
+    body.stop().animate({ scrollTop: 0 }, 2000, 'swing');
+  });
+}
+
+function scrollToSection() {
+  const body = $('html, body');
+
+  $('.scroll-to').click(function(e) {
+    e.preventDefault();
+    e.stopImmediatePropagation();
+
+    const distance = $($(this).attr('href')).offset().top;
+
+    body.stop().animate({ scrollTop: distance }, 1000, 'swing');
   });
 }

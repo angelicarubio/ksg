@@ -1,4 +1,4 @@
-<section class="landing__achievments">
+<section id="mis-logros" class="landing__achievments">
   <div class="l-main-wrapper">
     <h2>Mis logros</h2>
     <div class="wrapper">

@@ -21,22 +21,22 @@
     <nav>
       <ul>
         <li>
-          <a href="#">Sobre mí</a>
+          <a href="#sobre-mi" class="scroll-to">Sobre mí</a>
         </li>
         <li>
-          <a href="#">Lo que hago</a>
+          <a href="#lo-que-hago" class="scroll-to">Lo que hago</a>
         </li>
         <li>
-          <a href="#">Mis proyectos</a>
+          <a href="#mis-proyectos" class="scroll-to">Mis proyectos</a>
         </li>
         <li>
-          <a href="#">Mis logros</a>
+          <a href="#mis-logros" class="scroll-to">Mis logros</a>
         </li>
         <li>
-          <a href="#">Mi recorrido</a>
+          <a href="#mi-recorrido" class="scroll-to">Mi recorrido</a>
         </li>
         <li>
-          <a href="#">Contacto</a>
+          <a href="#contacto" class="scroll-to">Contacto</a>
         </li>
       </ul>
     </nav>

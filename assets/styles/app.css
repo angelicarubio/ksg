@@ -87,7 +87,7 @@ button {
   border: none;
 }
 
-h1, h2, section.landing__ventures .l-main-wrapper .tab-wrapper .tab-buttons .tab-toggle {
+h1, h2, section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots li button, section.landing__ventures .l-main-wrapper .tab-wrapper .tab-buttons .tab-toggle {
   margin: 0;
 }
 
@@ -101,7 +101,7 @@ h1 strong, h1 b {
   font-weight: 800;
 }
 
-h2, section.landing__ventures .l-main-wrapper .tab-wrapper .tab-buttons .tab-toggle {
+h2, section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots li button, section.landing__ventures .l-main-wrapper .tab-wrapper .tab-buttons .tab-toggle {
   font-size: 14px;
   font-weight: 900;
   text-transform: uppercase;
@@ -143,8 +143,7 @@ section.landing__hero {
   background-image: url(/assets/img/landing/img_hero.png);
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  max-height: 700px;
+  height: 90vh;
 }
 section.landing__hero .l-main-wrapper {
   position: relative;
@@ -168,7 +167,7 @@ section.landing__hero .l-main-wrapper .el-wrapper img.el_s {
 section.landing__hero .l-main-wrapper .el-wrapper img.el_g {
   bottom: 0;
   left: 0;
-  transform: translateY(20%);
+  transform: translateY(50%);
 }
 section.landing__hero .l-main-wrapper .el-wrapper img.el_logo {
   top: 45%;
@@ -338,7 +337,7 @@ section.landing__achievments {
 section.landing__achievments .l-main-wrapper {
   padding: 40px 0 100px 0;
 }
-section.landing__achievments .l-main-wrapper h2, section.landing__achievments section.landing__ventures .l-main-wrapper .tab-wrapper .tab-buttons .tab-toggle, section.landing__ventures section.landing__achievments .l-main-wrapper .tab-wrapper .tab-buttons .tab-toggle {
+section.landing__achievments .l-main-wrapper h2, section.landing__achievments section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots li button, section.landing__timeline section.landing__achievments .l-main-wrapper .slick-controls .dots .slick-dots li button, section.landing__achievments section.landing__ventures .l-main-wrapper .tab-wrapper .tab-buttons .tab-toggle, section.landing__ventures section.landing__achievments .l-main-wrapper .tab-wrapper .tab-buttons .tab-toggle {
   color: #FFF;
   margin-bottom: 70px;
   text-align: center;
@@ -356,6 +355,113 @@ section.landing__achievments .l-main-wrapper .wrapper div {
 }
 section.landing__achievments .l-main-wrapper .wrapper div img {
   margin-right: 20px;
+}
+
+section.landing__timeline {
+  position: relative;
+  height: 470px;
+}
+section.landing__timeline .slick {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+section.landing__timeline .slick .slick-list, section.landing__timeline .slick .slick-track {
+  height: 100%;
+}
+section.landing__timeline .slick .slide {
+  background-size: cover;
+  width: 90vw;
+}
+section.landing__timeline .l-main-wrapper {
+  position: relative;
+  height: 100%;
+}
+section.landing__timeline .l-main-wrapper .wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 60px 0 0 100px;
+  transition: opacity 0.2s ease-in-out;
+}
+section.landing__timeline .l-main-wrapper .wrapper h1 {
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 10px;
+}
+section.landing__timeline .l-main-wrapper .wrapper p {
+  font-size: 22px;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+section.landing__timeline .l-main-wrapper .wrapper h2, section.landing__timeline .l-main-wrapper .wrapper .slick-controls .dots .slick-dots li button, section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots li .wrapper button, section.landing__timeline section.landing__ventures .l-main-wrapper .wrapper .tab-wrapper .tab-buttons .tab-toggle, section.landing__ventures section.landing__timeline .l-main-wrapper .wrapper .tab-wrapper .tab-buttons .tab-toggle, section.landing__timeline section.landing__ventures .l-main-wrapper .tab-wrapper .tab-buttons .wrapper .tab-toggle, section.landing__ventures section.landing__timeline .l-main-wrapper .tab-wrapper .tab-buttons .wrapper .tab-toggle {
+  color: #FFF;
+}
+section.landing__timeline .l-main-wrapper .slick-controls {
+  position: absolute;
+  width: 100%;
+  bottom: 70px;
+  left: 0;
+}
+section.landing__timeline .l-main-wrapper .slick-controls .buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 25px;
+}
+section.landing__timeline .l-main-wrapper .slick-controls .buttons button.prev {
+  transform: rotate(-90deg);
+}
+section.landing__timeline .l-main-wrapper .slick-controls .buttons button.next {
+  transform: rotate(90deg);
+}
+section.landing__timeline .l-main-wrapper .slick-controls .buttons button img {
+  width: 28px;
+  height: 28px;
+}
+section.landing__timeline .l-main-wrapper .slick-controls .dots {
+  width: 100%;
+}
+section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 30px;
+}
+section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  display: block;
+  width: calc(100% - 40px);
+  height: 1px;
+  background-color: #FFF;
+}
+section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots li.slick-active button:before {
+  width: 14px;
+  height: 14px;
+  background-color: #C355D0;
+  margin: -3px 0 12px 0;
+}
+section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots li button {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  color: #FFF;
+}
+section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots li button:before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #FFF;
+  border-radius: 50%;
+  margin-bottom: 13px;
+  pointer-events: none;
+  z-index: 2;
 }
 
 /*# sourceMappingURL=app.css.map */

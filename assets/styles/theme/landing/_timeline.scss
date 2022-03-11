@@ -1,0 +1,111 @@
+section.landing__timeline {
+  position: relative;
+  height: 470px;
+  .slick {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    .slick-list, .slick-track {
+      height: 100%;
+    }
+    .slide {
+      background-size: cover;
+      width: 90vw;
+    }
+  }
+  .l-main-wrapper {
+    position: relative;
+    height: 100%;
+    .wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 60px 0 0 100px;
+      transition: opacity 0.2s ease-in-out;
+      h1 {
+        font-size: 50px;
+        line-height: 50px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 22px;
+        line-height: 25px;
+        margin-bottom: 10px;
+      }
+      h2 {
+        color: #FFF;
+      }
+    }
+    .slick-controls {
+      position: absolute;
+      width: 100%;
+      bottom: 70px;
+      left: 0;
+      .buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 25px;
+        button {
+          &.prev {
+            transform: rotate(-90deg);
+          }
+          &.next {
+            transform: rotate(90deg);
+          }
+          img {
+            width: 28px;
+            height: 28px;
+          }
+        }
+      }
+      .dots {
+        width: 100%;
+        .slick-dots {
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+          padding-right: 30px;
+          &:before {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 20px;
+            display: block;
+            width: calc(100% - 40px);
+            height: 1px;
+            background-color: #FFF;
+          }
+          li {
+            &.slick-active button:before {
+              width: 14px;
+              height: 14px;
+              background-color: $primary;
+              margin: -3px 0 12px 0;
+            }
+            button {
+              @extend h2;
+              display: flex;
+              flex-flow: column;
+              align-items: center;
+              color: #FFF;
+              &:before {
+                content: '';
+                display: block;
+                width: 10px;
+                height: 10px;
+                background-color: #FFF;
+                border-radius: 50%;
+                margin-bottom: 13px;
+                pointer-events: none;
+                z-index: 2;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

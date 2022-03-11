@@ -2,8 +2,7 @@ section.landing__hero {
   background-image: url(/assets/img/landing/img_hero.png);
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  max-height: 700px;
+  height: 90vh;
   .l-main-wrapper {
     position: relative;
     height: 100%;
@@ -23,7 +22,7 @@ section.landing__hero {
         &.el_g {
           bottom: 0;
           left: 0;
-          transform: translateY(20%);
+          transform: translateY(50%);
         }
         &.el_logo {
           top: 45%;

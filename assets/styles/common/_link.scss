@@ -13,4 +13,10 @@
     transform: rotate(45deg);
     margin-left: 10px;
   }
+  &.--black {
+    color: #000;
+    &:after {
+      background-image: url(/assets/img/icons/ic_link_black.svg);
+    }
+  }
 }

@@ -109,6 +109,28 @@ h2, section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots 
   margin-bottom: 6px;
 }
 
+label {
+  color: #000;
+}
+label span {
+  transform: translateY(20px);
+}
+
+input, textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #000;
+  font-family: inherit;
+  font-size: inherit;
+  transition: all 0.2s ease;
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+input:focus, textarea:focus {
+  border-color: #C355D0;
+  outline: none;
+}
+
 .link {
   display: flex;
   align-items: baseline;
@@ -125,6 +147,12 @@ h2, section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots 
   transform: rotate(45deg);
   margin-left: 10px;
 }
+.link.--black {
+  color: #000;
+}
+.link.--black:after {
+  background-image: url(/assets/img/icons/ic_link_black.svg);
+}
 
 .tab-wrapper .tab-content {
   display: none;
@@ -137,6 +165,15 @@ h2, section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots 
   width: 90vw;
   max-width: 960px;
   margin: 0 auto;
+}
+
+.col-wrapper .col-1 {
+  width: 100%;
+}
+.col-wrapper .col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
 }
 
 section.landing__hero {
@@ -489,6 +526,28 @@ section.landing__quotes div h2, section.landing__quotes div section.landing__ven
   text-transform: none;
   opacity: 0.4;
   text-align: center;
+}
+
+section.landing__contact {
+  background-color: #FFF;
+  padding: 80px 0;
+}
+section.landing__contact .l-main-wrapper h2, section.landing__contact section.landing__ventures .l-main-wrapper .tab-wrapper .tab-buttons .tab-toggle, section.landing__ventures section.landing__contact .l-main-wrapper .tab-wrapper .tab-buttons .tab-toggle, section.landing__contact section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots li button, section.landing__timeline section.landing__contact .l-main-wrapper .slick-controls .dots .slick-dots li button {
+  margin-bottom: 10px;
+}
+section.landing__contact .l-main-wrapper h2, section.landing__contact section.landing__ventures .l-main-wrapper .tab-wrapper .tab-buttons .tab-toggle, section.landing__ventures section.landing__contact .l-main-wrapper .tab-wrapper .tab-buttons .tab-toggle, section.landing__contact section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots li button, section.landing__timeline section.landing__contact .l-main-wrapper .slick-controls .dots .slick-dots li button, section.landing__contact .l-main-wrapper p {
+  color: #000;
+  text-align: center;
+}
+section.landing__contact .l-main-wrapper p {
+  color: #6F6F6F;
+  margin: 0;
+}
+section.landing__contact .l-main-wrapper form {
+  margin-top: 70px;
+}
+section.landing__contact .l-main-wrapper form button[type=submit] {
+  margin: 20px auto 0 auto;
 }
 
 /*# sourceMappingURL=app.css.map */

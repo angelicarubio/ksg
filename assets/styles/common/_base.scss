@@ -60,3 +60,25 @@ h2 {
   color: $primary;
   margin-bottom: 6px;
 }
+
+label {
+  color: #000;
+  span {
+    transform: translateY(20px);
+  }
+}
+
+input, textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #000;
+  font-family: inherit;
+  font-size: inherit;
+  transition: all 0.2s ease;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  &:focus {
+    border-color: $primary;
+    outline: none;
+  }
+}

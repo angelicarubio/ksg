@@ -1,0 +1,49 @@
+section.landing__ventures {
+  .l-main-wrapper {
+    padding: 100px 0 160px 0;
+    .tab-wrapper {
+      .tab-buttons {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        .tab-toggle {
+          @extend h2;
+          font-weight: $normal;
+          &:not(:last-of-type) {
+            margin-right: 70px;
+          }
+          &.--active {
+            font-weight: $black;
+          }
+        }
+      }
+      .tab-content {
+        display: none;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 20px;
+        &.--active {
+          display: grid;
+        }
+        li {
+          display: grid;
+          grid-template-rows: 150px auto auto;
+          text-align: center;
+          .img-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+            width: 100%;
+          }
+          p {
+            margin: 30px 0;
+          }
+          .link {
+            justify-self: center;
+            align-self: flex-end;
+          }
+        }
+      }
+    }
+  }
+}

@@ -330,4 +330,32 @@ section.landing__ventures .l-main-wrapper .tab-wrapper .tab-content li .link {
   align-self: flex-end;
 }
 
+section.landing__achievments {
+  background-image: url(/assets/img/landing/img_achievments-bg.png);
+  background-size: cover;
+  background-position: center;
+}
+section.landing__achievments .l-main-wrapper {
+  padding: 40px 0 100px 0;
+}
+section.landing__achievments .l-main-wrapper h2, section.landing__achievments section.landing__ventures .l-main-wrapper .tab-wrapper .tab-buttons .tab-toggle, section.landing__ventures section.landing__achievments .l-main-wrapper .tab-wrapper .tab-buttons .tab-toggle {
+  color: #FFF;
+  margin-bottom: 70px;
+  text-align: center;
+}
+section.landing__achievments .l-main-wrapper .wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 70px;
+}
+section.landing__achievments .l-main-wrapper .wrapper div {
+  display: flex;
+  align-items: center;
+}
+section.landing__achievments .l-main-wrapper .wrapper div img {
+  margin-right: 20px;
+}
+
 /*# sourceMappingURL=app.css.map */

@@ -6,4 +6,5 @@
     include($_SERVER['DOCUMENT_ROOT'].'/partials/landing/_work.php');
     include($_SERVER['DOCUMENT_ROOT'].'/partials/landing/_ventures.php');
     echo '</section>';
+    include($_SERVER['DOCUMENT_ROOT'].'/partials/landing/_achievments.php');
     include($_SERVER['DOCUMENT_ROOT'].'/partials/common/_footer.php');

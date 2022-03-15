@@ -282,7 +282,7 @@ section.landing__about .l-main-wrapper {
 section.landing__about .l-main-wrapper .wrapper {
   display: flex;
 }
-section.landing__about .l-main-wrapper .wrapper img {
+section.landing__about .l-main-wrapper .wrapper .magic-image {
   align-self: flex-start;
   min-width: 380px;
   margin: 0 100px 0 50px;
@@ -636,6 +636,13 @@ footer .l-main-wrapper .legal p {
   font-size: 14px;
   line-height: 14px;
   text-align: center;
+}
+
+.magic-image {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.6s ease-in;
 }
 
 /*# sourceMappingURL=app.css.map */

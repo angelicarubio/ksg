@@ -1,9 +1,11 @@
 <section id="sobre-mi" class="landing__about">
   <div class="l-main-wrapper">
     <div class="wrapper">
-      <img
-        src="/assets/img/landing/img_karina-salazar-gonzalez.png"
-        alt="Karina Salazar González">
+      <div class="magic-image">
+        <img
+          src="/assets/img/landing/img_karina-salazar-gonzalez.png"
+          alt="Karina Salazar González">
+      </div>
       <div>
         <h2>Sobre mí</h2>
         <h1>¿Quién es <strong>Karina Salazar Gonzalez</strong>?</h1>
@@ -21,7 +23,9 @@
       </div>
     </div>
     <div class="contact-wrapper">
-      <img src="/assets/img/landing/img_ksg-olympics.png" alt="Juegos olímpicos">
+      <div class="magic-image">
+        <img src="/assets/img/landing/img_ksg-olympics.png" alt="Juegos olímpicos">
+      </div>
       <a href="#contacto" class="link">Contáctame</a>
     </div>
   </div>

@@ -1,10 +1,13 @@
 $(document).ready(function() {
+  var mainController = new ScrollMagic.Controller();
+
   showNav();
   toggleTab();
   initTimeline();
   setCurrentYear();
   backToTop();
   scrollToSection();
+  magicImages(mainController);
 });
 
 function toggleTab() {
@@ -103,4 +106,29 @@ function showNav() {
       $('nav').removeClass('--visible');
     }
   });
+}
+
+function magicImages(controller) {
+  let scenes = [];
+
+  $('.magic-image').each(function(_, val) {
+    const self = $(val);
+    const clone = self.find('img').clone();
+    const wrapper = $('<div>', { class: 'magic-image-wrapper' });
+
+    self.append(wrapper.append(clone));
+
+    let scene = new ScrollMagic.Scene({
+      duration: 1,
+      triggerElement: val
+    });
+
+    scene.on('start', function() {
+      self.css('height', self.find('img').height());
+    });
+    scene.addIndicators();
+    scenes.push(scene);
+  });
+
+  controller.addScene(scenes);
 }

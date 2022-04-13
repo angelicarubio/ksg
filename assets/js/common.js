@@ -121,7 +121,8 @@ function magicImages(controller) {
 
     let scene = new ScrollMagic.Scene({
       duration: 1,
-      triggerElement: val
+      triggerElement: val,
+      offset: self.attr('data-offset')
     });
 
     scene.on('start', function() {
@@ -136,7 +137,7 @@ function magicImages(controller) {
 function magicTitles(controller) {
   let scenes = [];
 
-  $('.magic-title').each(function(i, val) {
+  $('.magic-title').each(function(_, val) {
     const self = $(val);
     const words = self.html().split(' ');
     const wrappedWords = [];
@@ -149,7 +150,8 @@ function magicTitles(controller) {
 
     let scene = new ScrollMagic.Scene({
       duration: 1,
-      triggerElement: val
+      triggerElement: val,
+      offset: self.attr('data-offset')
     });
 
     scene.on('start', function() {

@@ -285,7 +285,8 @@ section.landing__about .l-main-wrapper .wrapper {
 section.landing__about .l-main-wrapper .wrapper .magic-image {
   align-self: flex-start;
   min-width: 380px;
-  margin: 0 100px 0 50px;
+  width: 380px;
+  margin: 0 100px 0 0;
 }
 section.landing__about .l-main-wrapper .wrapper > div {
   width: calc(100% - 480px);

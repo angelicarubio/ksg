@@ -6,7 +6,7 @@
         <h1 class="magic-title">Nutrióloga</h1>
       </button>
       <button type="button" class="link tab-toggle">
-        <h1 class="magic-title">Conferencista</h1>
+        <h1 class="magic-title" data-offset="-120">Conferencista</h1>
       </button>
     </div>
     <div class="wrapper">

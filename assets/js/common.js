@@ -8,6 +8,7 @@ $(document).ready(function() {
   backToTop();
   scrollToSection();
   magicImages(mainController);
+  magicTitles(mainController);
 });
 
 function toggleTab() {
@@ -125,6 +126,34 @@ function magicImages(controller) {
 
     scene.on('start', function() {
       self.find('.magic-image-wrapper').css('height', self.find('> img').height());
+    });
+    scenes.push(scene);
+  });
+
+  controller.addScene(scenes);
+}
+
+function magicTitles(controller) {
+  let scenes = [];
+
+  $('.magic-title').each(function(i, val) {
+    const self = $(val);
+    const words = self.html().split(' ');
+    const wrappedWords = [];
+
+    $.each(words, function(_, word) {
+      wrappedWords.push(`<span class="magic-title-wrapper"><span>${word}</span></span>`);
+    })
+
+    self.html(wrappedWords.join(' '));
+
+    let scene = new ScrollMagic.Scene({
+      duration: 1,
+      triggerElement: val
+    });
+
+    scene.on('start', function() {
+      self.find('> span').addClass('--active')
     });
     scene.addIndicators();
     scenes.push(scene);

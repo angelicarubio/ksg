@@ -8,7 +8,7 @@
       </div>
       <div>
         <h2>Sobre mí</h2>
-        <h1>¿Quién es <strong>Karina Salazar Gonzalez</strong>?</h1>
+        <h1 class="magic-title">¿Quién es <strong>Karina</strong> <strong>Salazar</strong> <strong>Gonzalez</strong>?</h1>
         <p>
           Nutrióloga mexicana con una maestria en nutrición clínica, especialista
           en nutrición deportiva, ISAK Nivel 3, 3 ciclos olímpicos y la primer mujer

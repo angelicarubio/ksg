@@ -3,10 +3,10 @@
     <h2>Lo que hago</h2>
     <div class="tab-buttons">
       <button type="button" class="link tab-toggle --active">
-        <h1>Nutrióloga</h1>
+        <h1 class="magic-title">Nutrióloga</h1>
       </button>
       <button type="button" class="link tab-toggle">
-        <h1>Conferencista</h1>
+        <h1 class="magic-title">Conferencista</h1>
       </button>
     </div>
     <div class="wrapper">

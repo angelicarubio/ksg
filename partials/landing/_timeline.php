@@ -2,7 +2,7 @@
   $slides = [
     [
       "year" => "2008",
-      "title" => "Graduada en <br>Teología y <br>Consejería.",
+      "title" => "Graduada en Teología y Consejería.",
       "description" => "CFNI, Dllas TX",
       "subtitle" => "",
       "image" => "/assets/img/landing/img_timeline-slide-0.png"
@@ -104,7 +104,7 @@
   </div>
   <div class="l-main-wrapper">
     <div class="wrapper">
-      <h1></h1>
+      <h1 class="magic-title"></h1>
       <p></p>
       <h2></h2>
     </div>

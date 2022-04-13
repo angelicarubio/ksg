@@ -287,7 +287,7 @@ section.landing__about .l-main-wrapper .wrapper .magic-image {
   min-width: 380px;
   margin: 0 100px 0 50px;
 }
-section.landing__about .l-main-wrapper .wrapper div {
+section.landing__about .l-main-wrapper .wrapper > div {
   width: calc(100% - 480px);
 }
 section.landing__about .l-main-wrapper .contact-wrapper {
@@ -341,17 +341,17 @@ section.landing__work .l-main-wrapper .wrapper .tab-content .image-wrapper {
   position: relative;
   width: 100%;
 }
-section.landing__work .l-main-wrapper .wrapper .tab-content .image-wrapper div {
+section.landing__work .l-main-wrapper .wrapper .tab-content .image-wrapper > div {
   position: absolute;
   right: 0;
   bottom: 0;
   display: flex;
   flex-flow: column;
 }
-section.landing__work .l-main-wrapper .wrapper .tab-content .image-wrapper div img:nth-of-type(1), section.landing__work .l-main-wrapper .wrapper .tab-content .image-wrapper div img:nth-of-type(3) {
+section.landing__work .l-main-wrapper .wrapper .tab-content .image-wrapper > div > div:nth-of-type(1), section.landing__work .l-main-wrapper .wrapper .tab-content .image-wrapper > div > div:nth-of-type(3) {
   width: 240px;
 }
-section.landing__work .l-main-wrapper .wrapper .tab-content .image-wrapper div img:nth-of-type(2) {
+section.landing__work .l-main-wrapper .wrapper .tab-content .image-wrapper > div > div:nth-of-type(2) {
   width: 160px;
   transform: translateX(-100%);
 }
@@ -640,8 +640,17 @@ footer .l-main-wrapper .legal p {
 
 .magic-image {
   position: relative;
+}
+.magic-image > img {
+  opacity: 0;
+}
+.magic-image .magic-image-wrapper {
   height: 0;
   overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   transition: height 0.6s ease-in;
 }
 

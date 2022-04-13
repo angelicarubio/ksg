@@ -9,7 +9,7 @@ section.landing__about {
         min-width: 380px;
         margin: 0 100px 0 50px;
       }
-      div {
+      > div {
         width: calc(100% - 480px);
       }
     }

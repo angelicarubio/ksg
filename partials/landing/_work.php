@@ -23,15 +23,21 @@
         </div>
         <div class="image-wrapper">
           <div>
-            <img
-              src="/assets/img/landing/img_nutritionist-1.png"
-              alt="Nutricionista 1">
-            <img
-              src="/assets/img/landing/img_nutritionist-2.png"
-              alt="Nutricionista 2">
-            <img
-              src="/assets/img/landing/img_nutritionist-3.png"
-              alt="Nutricionista 3">
+            <div class="magic-image">
+              <img
+                src="/assets/img/landing/img_nutritionist-1.png"
+                alt="Nutricionista 1">
+            </div>
+            <div class="magic-image">
+              <img
+                src="/assets/img/landing/img_nutritionist-2.png"
+                alt="Nutricionista 2">
+            </div>
+            <div class="magic-image">
+              <img
+                src="/assets/img/landing/img_nutritionist-3.png"
+                alt="Nutricionista 3">
+            </div>
           </div>
         </div>
       </div>
@@ -45,15 +51,21 @@
         </div>
         <div class="image-wrapper">
           <div>
-            <img
-              src="/assets/img/landing/img_lecturer-1.png"
-              alt="Conferencista 1">
-            <img
-              src="/assets/img/landing/img_lecturer-2.png"
-              alt="Conferencista 2">
-            <img
-              src="/assets/img/landing/img_lecturer-3.png"
-              alt="Conferencista 3">
+            <div class="magic-image">
+              <img
+                src="/assets/img/landing/img_lecturer-1.png"
+                alt="Conferencista 1">
+            </div>
+            <div class="magic-image">
+              <img
+                src="/assets/img/landing/img_lecturer-2.png"
+                alt="Conferencista 2">
+            </div>
+            <div class="magic-image">
+              <img
+                src="/assets/img/landing/img_lecturer-3.png"
+                alt="Conferencista 3">
+            </div>
           </div>
         </div>
       </div>

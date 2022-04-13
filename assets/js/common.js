@@ -124,7 +124,7 @@ function magicImages(controller) {
     });
 
     scene.on('start', function() {
-      self.css('height', self.find('img').height());
+      self.find('.magic-image-wrapper').css('height', self.find('> img').height());
     });
     scene.addIndicators();
     scenes.push(scene);

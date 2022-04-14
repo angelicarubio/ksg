@@ -9,6 +9,7 @@ $(document).ready(function() {
   scrollToSection();
   magicImages(mainController);
   magicTitles(mainController);
+  magicQuotes(mainController);
 });
 
 function toggleTab() {
@@ -162,4 +163,47 @@ function magicTitles(controller) {
   });
 
   controller.addScene(scenes);
+}
+
+function magicQuotes(controller) {
+  $('.magic-quote').each(function(_, val) {
+    const self = $(val);
+    const wrapper = self.find('> div');
+    const span = self.find('> div span');
+    let i = 1;
+
+    const horizontalScroller = (el) => {
+      let left = parseInt(el.css('left'));
+      let temp = -1 * el.width();
+
+      if (left < temp) {
+        const clone = el.clone();
+
+        el.stop();
+        el.remove();
+
+        wrapper.append(clone);
+        // clone.css('left', (clone.width() * (wrapper.find('span').length - 1)) + 60);
+        clone.css('left', parseInt(wrapper.find('span').last().css('left')) + ((wrapper.find('span').last().width() + 60) * i));
+
+        horizontalScroller(clone);
+
+        return;
+      }
+
+      el.animate({ left: (parseInt(left) - 10) }, 500, 'linear', () => horizontalScroller(el));
+    }
+
+    while(span.width() * i < $(window).width() * 2) {
+      let clone = span.clone();
+
+      wrapper.append(clone);
+      clone.css('left', (span.width() + 60) * i);
+      i++
+    }
+
+    self.find('> div span').each(function(_, el) {
+      horizontalScroller($(el));
+    });
+  });
 }

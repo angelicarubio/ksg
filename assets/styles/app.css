@@ -548,16 +548,28 @@ section.landing__quotes {
   padding: 25px 0;
   overflow: hidden;
 }
-section.landing__quotes div {
-  display: inline-block;
+section.landing__quotes .magic-quote {
+  width: 100%;
+  height: 33.3333333333%;
 }
-section.landing__quotes div h1 {
+section.landing__quotes .magic-quote div {
+  position: relative;
+  height: 100%;
+}
+section.landing__quotes .magic-quote div span {
+  position: absolute;
+  white-space: nowrap;
+  left: 0;
+  top: 50%;
+  transform: translateY(-40%);
+}
+section.landing__quotes .magic-quote div span h1 {
   font-size: 45px;
   line-height: 45px;
   font-weight: 800;
   margin-bottom: 10px;
 }
-section.landing__quotes div h2, section.landing__quotes div section.landing__ventures .l-main-wrapper .tab-wrapper .tab-buttons .tab-toggle, section.landing__ventures .l-main-wrapper .tab-wrapper .tab-buttons section.landing__quotes div .tab-toggle, section.landing__quotes div section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots li button, section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots li section.landing__quotes div button {
+section.landing__quotes .magic-quote div span h2, section.landing__quotes .magic-quote div span section.landing__ventures .l-main-wrapper .tab-wrapper .tab-buttons .tab-toggle, section.landing__ventures .l-main-wrapper .tab-wrapper .tab-buttons section.landing__quotes .magic-quote div span .tab-toggle, section.landing__quotes .magic-quote div span section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots li button, section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots li section.landing__quotes .magic-quote div span button {
   color: #FFF;
   text-transform: none;
   opacity: 0.4;
@@ -699,6 +711,7 @@ footer .l-main-wrapper .legal p {
   transform: translateY(100%);
   transition: transform 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition-duration: 0.6s;
+  padding-bottom: 5px;
 }
 
 /*# sourceMappingURL=app.css.map */

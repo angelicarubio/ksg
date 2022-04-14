@@ -7,19 +7,31 @@ section.landing__quotes {
   height: 370px;
   padding: 25px 0;
   overflow: hidden;
-  div {
-    display: inline-block;
-    h1 {
-      font-size: 45px;
-      line-height: 45px;
-      font-weight: $bold;
-      margin-bottom: 10px;
-    }
-    h2 {
-      color: #FFF;
-      text-transform: none;
-      opacity: 0.4;
-      text-align: center;
+  .magic-quote {
+    width: 100%;
+    height: calc(100% / 3);
+    div {
+      position: relative;
+      height: 100%;
+      span {
+        position: absolute;
+        white-space: nowrap;
+        left: 0;
+        top: 50%;
+        transform: translateY(-40%);
+        h1 {
+          font-size: 45px;
+          line-height: 45px;
+          font-weight: $bold;
+          margin-bottom: 10px;
+        }
+        h2 {
+          color: #FFF;
+          text-transform: none;
+          opacity: 0.4;
+          text-align: center;
+        }
+      }
     }
   }
 }

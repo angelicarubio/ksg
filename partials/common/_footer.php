@@ -23,7 +23,7 @@
       </aside>
     </div>
     <div class="legal">
-      <p>KSG ® | Copyright <span class="year"></span> © | SPGG, Nuevo León, México</p>
+      <p>KSG ® <span class="separator">|</span> Copyright <span class="year"></span> © <span class="separator">|</span> SPGG, Nuevo León, México</p>
     </div>
   </div>
 </footer>

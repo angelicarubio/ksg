@@ -50,3 +50,44 @@ footer {
     }
   }
 }
+@media screen and (max-width: $tablet) {
+  footer {
+    .l-main-wrapper {
+      .wrapper {
+        flex-flow: column;
+        padding: 60px 0 20px 0;
+        aside {
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          &:first-of-type {
+            border-right: none;
+            padding: 0;
+            > img {
+              margin-bottom: 10px;
+              width: 130px;
+            }
+          }
+          &:last-of-type {
+            flex-flow: column;
+            > img {
+              width: 130px;
+            }
+            .social {
+              margin-top: 50px;
+            }
+          }
+        }
+      }
+      .legal {
+        padding: 20px 0;
+        .separator {
+          &:last-of-type {
+            display: block;
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+}

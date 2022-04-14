@@ -73,12 +73,16 @@ input, textarea {
   border: none;
   border-bottom: 2px solid #000;
   font-family: inherit;
-  font-size: inherit;
+  font-size: 18px;
   transition: all 0.2s ease;
   margin-bottom: 20px;
   padding: 10px 0;
+  resize: none;
   &:focus {
     border-color: $primary;
     outline: none;
+  }
+  &::placeholder {
+    color: #010101;
   }
 }

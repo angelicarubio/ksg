@@ -158,7 +158,6 @@ function magicTitles(controller) {
     scene.on('start', function() {
       self.find('> span').addClass('--active')
     });
-    scene.addIndicators();
     scenes.push(scene);
   });
 

@@ -5,18 +5,15 @@
     <form action="#" class="col-wrapper">
       <div class="col-2">
         <label for="name">
-          <span>Nombre.</span>
-          <input type="text" name="name" id="name">
+          <input type="text" name="name" id="name" placeholder="Nombre.">
         </label>
         <label for="email">
-          <span>Correo electrónico.</span>
-          <input type="text" name="email" id="email">
+          <input type="text" name="email" id="email" placeholder="Correo electrónico.">
         </label>
       </div>
       <div class="col-1">
         <label for="message">
-          <span>Mensaje.</span>
-          <textarea name="message" id="message" rows="1"></textarea>
+          <textarea name="message" id="message" rows="1" placeholder="Mensaje."></textarea>
         </label>
       </div>
       <div class="col-1">

@@ -21,3 +21,18 @@ section.landing__contact {
     }
   }
 }
+@media screen and (max-width: $tablet) {
+  section.landing__contact {
+    .l-main-wrapper {
+      form {
+        .col-2 {
+          display: flex;
+          flex-flow: column;
+          > *:not(:last-child) {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}

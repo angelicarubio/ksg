@@ -545,6 +545,20 @@ section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots li b
 section.landing__quotes {
   background-image: url(/assets/img/landing/img_quotes-bg.png);
   background-size: cover;
+}
+section.landing__quotes h1 {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+section.landing__quotes h2, section.landing__quotes section.landing__ventures .l-main-wrapper .tab-wrapper .tab-buttons .tab-toggle, section.landing__ventures .l-main-wrapper .tab-wrapper .tab-buttons section.landing__quotes .tab-toggle, section.landing__quotes section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots li button, section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots li section.landing__quotes button {
+  color: #FFF;
+  text-transform: none;
+  opacity: 0.4;
+  text-align: center;
+}
+section.landing__quotes .desktop-wrapper {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
@@ -552,34 +566,67 @@ section.landing__quotes {
   padding: 25px 0;
   overflow: hidden;
 }
-section.landing__quotes .magic-quote {
+section.landing__quotes .desktop-wrapper .magic-quote {
   width: 100%;
   height: 33.3333333333%;
 }
-section.landing__quotes .magic-quote div {
+section.landing__quotes .desktop-wrapper .magic-quote div {
   position: relative;
   height: 100%;
 }
-section.landing__quotes .magic-quote div span {
+section.landing__quotes .desktop-wrapper .magic-quote div span {
   position: absolute;
   white-space: nowrap;
   left: 0;
   top: 50%;
   transform: translateY(-40%);
 }
-section.landing__quotes .magic-quote div span h1 {
-  font-size: 45px;
-  line-height: 45px;
-  font-weight: 800;
-  margin-bottom: 10px;
-}
-section.landing__quotes .magic-quote div span h2, section.landing__quotes .magic-quote div span section.landing__ventures .l-main-wrapper .tab-wrapper .tab-buttons .tab-toggle, section.landing__ventures .l-main-wrapper .tab-wrapper .tab-buttons section.landing__quotes .magic-quote div span .tab-toggle, section.landing__quotes .magic-quote div span section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots li button, section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots li section.landing__quotes .magic-quote div span button {
-  color: #FFF;
-  text-transform: none;
-  opacity: 0.4;
-  text-align: center;
+section.landing__quotes .mobile-wrapper {
+  display: none;
 }
 
+@media screen and (max-width: 960px) {
+  section.landing__quotes .desktop-wrapper {
+    display: none;
+  }
+  section.landing__quotes .mobile-wrapper {
+    display: flex;
+    flex-flow: column-reverse;
+    position: relative;
+    padding: 70px 5vw;
+  }
+  section.landing__quotes .mobile-wrapper > div h1 {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+  section.landing__quotes .mobile-wrapper > div h2, section.landing__quotes .mobile-wrapper > div section.landing__ventures .l-main-wrapper .tab-wrapper .tab-buttons .tab-toggle, section.landing__ventures .l-main-wrapper .tab-wrapper .tab-buttons section.landing__quotes .mobile-wrapper > div .tab-toggle, section.landing__quotes .mobile-wrapper > div section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots li button, section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots li section.landing__quotes .mobile-wrapper > div button {
+    font-size: 16px;
+  }
+  section.landing__quotes .mobile-wrapper > div:not(:last-of-type) {
+    margin-bottom: 25px;
+  }
+  section.landing__quotes .mobile-wrapper > div:nth-of-type(1) h1 {
+    text-align: left;
+  }
+  section.landing__quotes .mobile-wrapper > div:nth-of-type(1) h2, section.landing__quotes .mobile-wrapper > div:nth-of-type(1) section.landing__ventures .l-main-wrapper .tab-wrapper .tab-buttons .tab-toggle, section.landing__ventures .l-main-wrapper .tab-wrapper .tab-buttons section.landing__quotes .mobile-wrapper > div:nth-of-type(1) .tab-toggle, section.landing__quotes .mobile-wrapper > div:nth-of-type(1) section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots li button, section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots li section.landing__quotes .mobile-wrapper > div:nth-of-type(1) button {
+    text-align: right;
+    padding-right: 30px;
+  }
+  section.landing__quotes .mobile-wrapper > div:nth-of-type(2) h1 {
+    text-align: right;
+  }
+  section.landing__quotes .mobile-wrapper > div:nth-of-type(2) h2, section.landing__quotes .mobile-wrapper > div:nth-of-type(2) section.landing__ventures .l-main-wrapper .tab-wrapper .tab-buttons .tab-toggle, section.landing__ventures .l-main-wrapper .tab-wrapper .tab-buttons section.landing__quotes .mobile-wrapper > div:nth-of-type(2) .tab-toggle, section.landing__quotes .mobile-wrapper > div:nth-of-type(2) section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots li button, section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots li section.landing__quotes .mobile-wrapper > div:nth-of-type(2) button {
+    margin-top: -25px;
+    text-align: left;
+  }
+  section.landing__quotes .mobile-wrapper > div:nth-of-type(3) h1 {
+    text-align: left;
+  }
+  section.landing__quotes .mobile-wrapper > div:nth-of-type(3) h2, section.landing__quotes .mobile-wrapper > div:nth-of-type(3) section.landing__ventures .l-main-wrapper .tab-wrapper .tab-buttons .tab-toggle, section.landing__ventures .l-main-wrapper .tab-wrapper .tab-buttons section.landing__quotes .mobile-wrapper > div:nth-of-type(3) .tab-toggle, section.landing__quotes .mobile-wrapper > div:nth-of-type(3) section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots li button, section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots li section.landing__quotes .mobile-wrapper > div:nth-of-type(3) button {
+    text-align: right;
+  }
+}
 section.landing__contact {
   background-color: #FFF;
   padding: 80px 0;

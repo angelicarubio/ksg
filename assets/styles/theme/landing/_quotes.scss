@@ -1,35 +1,92 @@
 section.landing__quotes {
   background-image: url(/assets/img/landing/img_quotes-bg.png);
   background-size: cover;
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
-  height: 370px;
-  padding: 25px 0;
-  overflow: hidden;
-  .magic-quote {
-    width: 100%;
-    height: calc(100% / 3);
-    div {
+  h1 {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: $bold;
+    margin-bottom: 10px;
+  }
+  h2 {
+    color: #FFF;
+    text-transform: none;
+    opacity: 0.4;
+    text-align: center;
+  }
+  .desktop-wrapper {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    height: 370px;
+    padding: 25px 0;
+    overflow: hidden;
+    .magic-quote {
+      width: 100%;
+      height: calc(100% / 3);
+      div {
+        position: relative;
+        height: 100%;
+        span {
+          position: absolute;
+          white-space: nowrap;
+          left: 0;
+          top: 50%;
+          transform: translateY(-40%);
+        }
+      }
+    }
+  }
+  .mobile-wrapper {
+    display: none;
+  }
+}
+@media screen and (max-width: $tablet ) {
+  section.landing__quotes {
+    .desktop-wrapper {
+      display: none;
+    }
+    .mobile-wrapper {
+      display: flex;
+      flex-flow: column-reverse;
       position: relative;
-      height: 100%;
-      span {
-        position: absolute;
-        white-space: nowrap;
-        left: 0;
-        top: 50%;
-        transform: translateY(-40%);
+      padding: 70px 5vw;
+      > div {
         h1 {
-          font-size: 45px;
-          line-height: 45px;
-          font-weight: $bold;
+          font-size: 20px;
+          line-height: 26px;
           margin-bottom: 10px;
         }
         h2 {
-          color: #FFF;
-          text-transform: none;
-          opacity: 0.4;
-          text-align: center;
+          font-size: 16px;
+        }
+        &:not(:last-of-type) {
+          margin-bottom: 25px;
+        }
+        &:nth-of-type(1) {
+          h1 {
+            text-align: left;
+          }
+          h2 {
+            text-align: right;
+            padding-right: 30px;
+          }
+        }
+        &:nth-of-type(2) {
+          h1 {
+            text-align: right;
+          }
+          h2 {
+            margin-top: -25px;
+            text-align: left;
+          }
+        }
+        &:nth-of-type(3) {
+          h1 {
+            text-align: left;
+          }
+          h2 {
+            text-align: right;
+          }
         }
       }
     }

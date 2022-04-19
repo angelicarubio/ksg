@@ -25,3 +25,34 @@ section.landing__achievments {
     }
   }
 }
+@media screen and (max-width: $tablet) {
+  section.landing__achievments {
+    .l-main-wrapper {
+      padding: 60px 0 70px 0;
+      h2 {
+        margin-bottom: 40px;
+      }
+      .wrapper {
+        display: flex;
+        flex-flow: column;
+        div {
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          text-align: center;
+          &:not(:last-of-type) {
+            margin-bottom: 30px;
+          }
+          img {
+            max-height: 50px;
+            margin: 0 0 20px 0;
+          }
+          p {
+            margin: 0;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

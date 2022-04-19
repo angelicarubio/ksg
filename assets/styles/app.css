@@ -434,6 +434,35 @@ section.landing__achievments .l-main-wrapper .wrapper div img {
   margin-right: 20px;
 }
 
+@media screen and (max-width: 960px) {
+  section.landing__achievments .l-main-wrapper {
+    padding: 60px 0 70px 0;
+  }
+  section.landing__achievments .l-main-wrapper h2, section.landing__achievments section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots li button, section.landing__timeline section.landing__achievments .l-main-wrapper .slick-controls .dots .slick-dots li button, section.landing__achievments section.landing__ventures .l-main-wrapper .tab-wrapper .tab-buttons .tab-toggle, section.landing__ventures section.landing__achievments .l-main-wrapper .tab-wrapper .tab-buttons .tab-toggle {
+    margin-bottom: 40px;
+  }
+  section.landing__achievments .l-main-wrapper .wrapper {
+    display: flex;
+    flex-flow: column;
+  }
+  section.landing__achievments .l-main-wrapper .wrapper div {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+  }
+  section.landing__achievments .l-main-wrapper .wrapper div:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
+  section.landing__achievments .l-main-wrapper .wrapper div img {
+    max-height: 50px;
+    margin: 0 0 20px 0;
+  }
+  section.landing__achievments .l-main-wrapper .wrapper div p {
+    margin: 0;
+    font-size: 16px;
+  }
+}
 section.landing__timeline {
   position: relative;
   height: 470px;

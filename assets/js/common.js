@@ -9,8 +9,21 @@ $(document).ready(function() {
   scrollToSection();
   magicImages(mainController);
   magicTitles(mainController);
-  magicQuotes(mainController);
+  magicQuotesHandler(mainController);
+
+  window.addEventListener('resize', debounce(function(e){
+    magicQuotesHandler(mainController);
+  }));
 });
+
+function debounce(func){
+  var timer;
+
+  return function(event){
+    if(timer) clearTimeout(timer);
+    timer = setTimeout(func,100,event);
+  };
+}
 
 function toggleTab() {
   $('.tab-toggle').click(function() {
@@ -164,12 +177,20 @@ function magicTitles(controller) {
   controller.addScene(scenes);
 }
 
+function magicQuotesHandler(controller) {
+  if ($(window).width() > 960 && !$('.landing__quotes').hasClass('--cloned')) {
+    magicQuotes(controller);
+  } else if ($(window).width() <= 960 && $('.landing__quotes').hasClass('--cloned')) {
+    destroyMagicQuotes();
+  }
+}
+
 function magicQuotes(controller) {
   $('.magic-quote').each(function(_, val) {
     const self = $(val);
     const wrapper = self.find('> div');
     const span = self.find('> div span');
-    let i = 1;
+    let index = 1;
 
     const horizontalScroller = (el) => {
       let left = parseInt(el.css('left'));
@@ -183,7 +204,7 @@ function magicQuotes(controller) {
 
         wrapper.append(clone);
         // clone.css('left', (clone.width() * (wrapper.find('span').length - 1)) + 60);
-        clone.css('left', parseInt(wrapper.find('span').last().css('left')) + ((wrapper.find('span').last().width() + 60) * i));
+        clone.css('left', parseInt(wrapper.find('span').last().css('left')) + ((wrapper.find('span').last().width() + 60) * index));
 
         horizontalScroller(clone);
 
@@ -193,16 +214,31 @@ function magicQuotes(controller) {
       el.animate({ left: (parseInt(left) - 10) }, 500, 'linear', () => horizontalScroller(el));
     }
 
-    while(span.width() * i < $(window).width() * 2) {
+    for(i = 0; i < 4; i++) {
       let clone = span.clone();
 
+      clone.addClass('--clone');
       wrapper.append(clone);
       clone.css('left', (span.width() + 60) * i);
-      i++
+      index++;
     }
 
     self.find('> div span').each(function(_, el) {
       horizontalScroller($(el));
     });
+
+    $('.landing__quotes').addClass('--cloned');
   });
+}
+
+function destroyMagicQuotes() {
+  $('.magic-quote div span').each(function(_, el) {
+    const self = $(el);
+
+    self.stop();
+    self.css('left', 0);
+    if (self.hasClass('--clone')) self.remove();
+  });
+
+  $('.landing__quotes').removeClass('--cloned')
 }

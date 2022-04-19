@@ -135,6 +135,22 @@ input::placeholder, textarea::placeholder {
   color: #010101;
 }
 
+@media screen and (max-width: 960px) {
+  h1 {
+    font-size: 25px;
+    line-height: 27px;
+  }
+
+  h2, section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots li button, section.landing__ventures .l-main-wrapper .tab-wrapper .tab-buttons .tab-toggle {
+    font-size: 14px;
+    line-height: 16 px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
 .link {
   display: flex;
   align-items: baseline;
@@ -303,6 +319,32 @@ section.landing__about .l-main-wrapper .contact-wrapper {
   padding-left: 240px;
 }
 
+@media screen and (max-width: 960px) {
+  section.landing__about .l-main-wrapper {
+    padding: 70px 0;
+  }
+  section.landing__about .l-main-wrapper .wrapper {
+    flex-flow: column;
+  }
+  section.landing__about .l-main-wrapper .wrapper .magic-image {
+    margin: 0 auto 20px auto;
+  }
+  section.landing__about .l-main-wrapper .wrapper > div {
+    width: 100%;
+  }
+  section.landing__about .l-main-wrapper .wrapper > div h1, section.landing__about .l-main-wrapper .wrapper > div h2, section.landing__about section.landing__timeline .l-main-wrapper .wrapper > div .slick-controls .dots .slick-dots li button, section.landing__timeline section.landing__about .l-main-wrapper .wrapper > div .slick-controls .dots .slick-dots li button, section.landing__about section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots li .wrapper > div button, section.landing__timeline section.landing__about .l-main-wrapper .slick-controls .dots .slick-dots li .wrapper > div button, section.landing__about section.landing__ventures .l-main-wrapper .wrapper > div .tab-wrapper .tab-buttons .tab-toggle, section.landing__ventures section.landing__about .l-main-wrapper .wrapper > div .tab-wrapper .tab-buttons .tab-toggle, section.landing__about section.landing__ventures .l-main-wrapper .tab-wrapper .tab-buttons .wrapper > div .tab-toggle, section.landing__ventures section.landing__about .l-main-wrapper .tab-wrapper .tab-buttons .wrapper > div .tab-toggle {
+    text-align: center;
+  }
+  section.landing__about .l-main-wrapper .contact-wrapper {
+    padding: 0;
+  }
+  section.landing__about .l-main-wrapper .contact-wrapper .magic-image {
+    display: none;
+  }
+  section.landing__about .l-main-wrapper .contact-wrapper .link {
+    margin: 0 auto;
+  }
+}
 section.landing__work .l-main-wrapper {
   padding: 120px 0 130px 0;
   border-bottom: 1px solid #FFF;

@@ -23,3 +23,31 @@ section.landing__about {
     }
   }
 }
+@media screen and (max-width: $tablet) {
+  section.landing__about {
+    .l-main-wrapper {
+      padding: 70px 0;
+      .wrapper {
+        flex-flow: column;
+        .magic-image {
+          margin: 0 auto 20px auto;
+        }
+        > div {
+          width: 100%;
+          h1, h2 {
+            text-align: center;
+          }
+        }
+      }
+      .contact-wrapper {
+        padding: 0;
+        .magic-image {
+          display: none;
+        }
+        .link {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

@@ -86,3 +86,20 @@ input, textarea {
     color: #010101;
   }
 }
+
+@media screen and (max-width: $tablet) {
+  h1 {
+    font-size: 25px;
+    line-height: 27px;
+  }
+
+  h2 {
+    font-size: 14px;
+    line-height: 16 px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}

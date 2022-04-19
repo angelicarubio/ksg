@@ -107,6 +107,7 @@
       <h1 class="magic-title"></h1>
       <p></p>
       <h2></h2>
+      <h1></h1>
     </div>
     <div class="slick-controls">
       <div class="buttons">

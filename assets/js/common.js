@@ -79,9 +79,10 @@ function setTimelineContent(carousel) {
   const slide = $(carousel.find('.slide:not(.slick-clone)').get(i));
   const content = parent.find('.wrapper');
 
-  content.find('h1').html(slide.attr('data-title'));
+  content.find('.magic-title').html(slide.attr('data-title'));
   content.find('p').html(slide.attr('data-description'));
   content.find('h2').html(slide.attr('data-subtitle'));
+  content.find('h1:not(.magic-title)').html(slide.attr('data-year'));
 }
 
 function setCurrentYear() {

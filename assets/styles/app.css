@@ -403,6 +403,54 @@ section.landing__work .l-main-wrapper .wrapper .tab-content .image-wrapper > div
   transform: translateX(-100%);
 }
 
+@media screen and (max-width: 960px) {
+  section.landing__work .l-main-wrapper {
+    padding: 70px 0;
+  }
+  section.landing__work .l-main-wrapper h2, section.landing__work section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots li button, section.landing__timeline section.landing__work .l-main-wrapper .slick-controls .dots .slick-dots li button, section.landing__work section.landing__ventures .l-main-wrapper .tab-wrapper .tab-buttons .tab-toggle, section.landing__ventures section.landing__work .l-main-wrapper .tab-wrapper .tab-buttons .tab-toggle {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  section.landing__work .l-main-wrapper .wrapper {
+    flex-flow: column-reverse;
+  }
+  section.landing__work .l-main-wrapper .wrapper .link {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  section.landing__work .l-main-wrapper .wrapper .tab-content {
+    flex-flow: column-reverse;
+  }
+  section.landing__work .l-main-wrapper .wrapper .tab-content.--active {
+    display: flex;
+    flex-flow: column-reverse;
+    margin-top: 40px;
+  }
+  section.landing__work .l-main-wrapper .wrapper .tab-content .content-wrapper {
+    width: 100%;
+    margin: 20px 0;
+  }
+  section.landing__work .l-main-wrapper .wrapper .tab-content .image-wrapper > div {
+    position: initial;
+    align-items: flex-end;
+  }
+  section.landing__work .l-main-wrapper .wrapper .tab-content .image-wrapper > div .magic-image:nth-of-type(2) {
+    align-self: flex-start;
+    transform: none;
+  }
+  section.landing__work .l-main-wrapper .tab-buttons .link {
+    width: 100%;
+  }
+  section.landing__work .l-main-wrapper .tab-buttons .link:before {
+    width: 50%;
+  }
+  section.landing__work .l-main-wrapper .tab-buttons .link:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+  section.landing__work .l-main-wrapper .tab-buttons .link h1 {
+    margin-bottom: 20px;
+  }
+}
 section.landing__ventures .l-main-wrapper {
   padding: 100px 0 160px 0;
 }

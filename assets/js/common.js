@@ -11,11 +11,19 @@ $(document).ready(function() {
   magicTitles(mainController);
   magicQuotesHandler(mainController);
   initMobileVenturesSlick();
+  toggleMobileMenu();
 
   window.addEventListener('resize', debounce(function(e){
     magicQuotesHandler(mainController);
   }));
 });
+
+function toggleMobileMenu() {
+  $('#mobile-menu-toggle').click(function() {
+    $(this).toggleClass('--active');
+    $('nav').toggleClass('--active');
+  });
+}
 
 function debounce(func){
   var timer;

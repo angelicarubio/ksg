@@ -5,7 +5,8 @@
         <button type="button" class="tab-toggle --active">Emprendimientos</button>
         <button type="button" class="tab-toggle">Colaboraciones</button>
       </div>
-      <ul class="tab-content --active">
+      <h1 class="mobile-title">Emprendimientos</h1>
+      <ul class="tab-content --active slick">
         <li>
           <div class="img-wrapper">
             <img src="/assets/img/landing/logo_3cientos_color.png" alt="3ientos">
@@ -39,6 +40,8 @@
           <a href="#" class="link">Midei MX</a>
         </li>
       </ul>
+      <div class="mobile-dots"></div>
+      <h1 class="mobile-title">Colaboraciones</h1>
       <ul class="tab-content">
         <li></li>
         <li>

@@ -54,3 +54,34 @@ section.landing__hero {
     }
   }
 }
+@media screen and (max-width: $tablet) {
+  section.landing__hero {
+    .l-main-wrapper {
+      .wrapper {
+        display: none;
+      }
+      .el-wrapper {
+        img {
+          width: 100px;
+          &.el_k {
+            top: 10%;
+          }
+          &.el_s {
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+          }
+          &.el_g {
+            bottom: 5%;
+            transform: none;
+          }
+          &.el_logo {
+            top: 50%;
+            left: 0;
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}

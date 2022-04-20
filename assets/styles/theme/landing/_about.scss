@@ -31,6 +31,8 @@ section.landing__about {
         flex-flow: column;
         .magic-image {
           margin: 0 auto 20px auto;
+          min-width: 0;
+          width: 100%;
         }
         > div {
           width: 100%;

@@ -10,6 +10,7 @@ $(document).ready(function() {
   magicImages(mainController);
   magicTitles(mainController);
   magicQuotesHandler(mainController);
+  initMobileVenturesSlick();
 
   window.addEventListener('resize', debounce(function(e){
     magicQuotesHandler(mainController);
@@ -242,4 +243,22 @@ function destroyMagicQuotes() {
   });
 
   $('.landing__quotes').removeClass('--cloned')
+}
+
+function initMobileVenturesSlick() {
+  $('.landing__ventures .slick').slick({
+    breakpoint: 960,
+    settings: 'unslick',
+    mobileFirst: true,
+    slidesToShow: 1,
+    arrows: false,
+    dots: true,
+    appendDots: $('.landing__ventures .mobile-dots'),
+    responsive: [
+      {
+        breakpoint: 960,
+        settings: 'unslick'
+      }
+    ]
+  });
 }

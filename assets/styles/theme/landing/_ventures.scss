@@ -17,6 +17,10 @@ section.landing__ventures {
           }
         }
       }
+      .mobile-title,
+      .mobile-dots {
+        display: none;
+      }
       .tab-content {
         display: none;
         grid-template-columns: repeat(3, 1fr);
@@ -41,6 +45,60 @@ section.landing__ventures {
           .link {
             justify-self: center;
             align-self: flex-end;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: $tablet) {
+  section.landing__ventures {
+    .l-main-wrapper {
+      .tab-wrapper {
+        .tab-buttons {
+          display: none;
+        }
+        .mobile-title {
+          display: block;
+          font-size: 14px;
+          font-weight: $black;
+          text-transform: uppercase;
+          color: #C355D0;
+          text-align: center;
+        }
+        .mobile-dots {
+          display: flex;
+          margin: 40px 0 80px 0;
+          .slick-dots {
+            display: flex;
+            margin: 0 auto;
+            li {
+              width: 8px;
+              height: 8px;
+              border: 1px solid #FFF;
+              border-radius: 50%;
+              &.slick-active {
+                background-color: #FFF;
+              }
+              &:not(:last-of-type) {
+                margin-right: 40px;
+              }
+              button {
+                display: none;
+              }
+            }
+          }
+        }
+        .tab-content {
+          display: block;
+          &.--active {
+            display: block;
+          }
+          li {
+            display: inline-block;
+            .link {
+              justify-content: center;
+            }
           }
         }
       }

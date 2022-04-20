@@ -143,7 +143,7 @@ input::placeholder, textarea::placeholder {
 
   h2, section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots li button, section.landing__ventures .l-main-wrapper .tab-wrapper .tab-buttons .tab-toggle {
     font-size: 14px;
-    line-height: 16 px;
+    line-height: 16px;
   }
 
   p {
@@ -182,7 +182,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .l-main-wrapper {
-  width: 90vw;
+  width: 80vw;
   max-width: 960px;
   margin: 0 auto;
 }
@@ -288,9 +288,34 @@ section.landing__hero .l-main-wrapper .wrapper ul li a:hover {
   color: #2A1BC5;
 }
 
+@media screen and (max-width: 960px) {
+  section.landing__hero .l-main-wrapper .wrapper {
+    display: none;
+  }
+  section.landing__hero .l-main-wrapper .el-wrapper img {
+    width: 100px;
+  }
+  section.landing__hero .l-main-wrapper .el-wrapper img.el_k {
+    top: 10%;
+  }
+  section.landing__hero .l-main-wrapper .el-wrapper img.el_s {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+  section.landing__hero .l-main-wrapper .el-wrapper img.el_g {
+    bottom: 5%;
+    transform: none;
+  }
+  section.landing__hero .l-main-wrapper .el-wrapper img.el_logo {
+    top: 50%;
+    left: 0;
+    width: 50%;
+  }
+}
 section.about-bg-wrapper {
   background-image: url(/assets/img/landing/img_about-bg.png);
-  background-size: 100% auto;
+  background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
 }
@@ -328,6 +353,8 @@ section.landing__about .l-main-wrapper .contact-wrapper {
   }
   section.landing__about .l-main-wrapper .wrapper .magic-image {
     margin: 0 auto 20px auto;
+    min-width: 0;
+    width: 100%;
   }
   section.landing__about .l-main-wrapper .wrapper > div {
     width: 100%;
@@ -429,6 +456,7 @@ section.landing__work .l-main-wrapper .wrapper .tab-content .image-wrapper > div
   section.landing__work .l-main-wrapper .wrapper .tab-content .content-wrapper {
     width: 100%;
     margin: 20px 0;
+    min-width: 0;
   }
   section.landing__work .l-main-wrapper .wrapper .tab-content .image-wrapper > div {
     position: initial;
@@ -468,6 +496,10 @@ section.landing__ventures .l-main-wrapper .tab-wrapper .tab-buttons .tab-toggle:
 section.landing__ventures .l-main-wrapper .tab-wrapper .tab-buttons .tab-toggle.--active {
   font-weight: 900;
 }
+section.landing__ventures .l-main-wrapper .tab-wrapper .mobile-title,
+section.landing__ventures .l-main-wrapper .tab-wrapper .mobile-dots {
+  display: none;
+}
 section.landing__ventures .l-main-wrapper .tab-wrapper .tab-content {
   display: none;
   grid-template-columns: repeat(3, 1fr);
@@ -496,6 +528,54 @@ section.landing__ventures .l-main-wrapper .tab-wrapper .tab-content li .link {
   align-self: flex-end;
 }
 
+@media screen and (max-width: 960px) {
+  section.landing__ventures .l-main-wrapper .tab-wrapper .tab-buttons {
+    display: none;
+  }
+  section.landing__ventures .l-main-wrapper .tab-wrapper .mobile-title {
+    display: block;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #C355D0;
+    text-align: center;
+  }
+  section.landing__ventures .l-main-wrapper .tab-wrapper .mobile-dots {
+    display: flex;
+    margin: 40px 0 80px 0;
+  }
+  section.landing__ventures .l-main-wrapper .tab-wrapper .mobile-dots .slick-dots {
+    display: flex;
+    margin: 0 auto;
+  }
+  section.landing__ventures .l-main-wrapper .tab-wrapper .mobile-dots .slick-dots li {
+    width: 8px;
+    height: 8px;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+  }
+  section.landing__ventures .l-main-wrapper .tab-wrapper .mobile-dots .slick-dots li.slick-active {
+    background-color: #FFF;
+  }
+  section.landing__ventures .l-main-wrapper .tab-wrapper .mobile-dots .slick-dots li:not(:last-of-type) {
+    margin-right: 40px;
+  }
+  section.landing__ventures .l-main-wrapper .tab-wrapper .mobile-dots .slick-dots li button {
+    display: none;
+  }
+  section.landing__ventures .l-main-wrapper .tab-wrapper .tab-content {
+    display: block;
+  }
+  section.landing__ventures .l-main-wrapper .tab-wrapper .tab-content.--active {
+    display: block;
+  }
+  section.landing__ventures .l-main-wrapper .tab-wrapper .tab-content li {
+    display: inline-block;
+  }
+  section.landing__ventures .l-main-wrapper .tab-wrapper .tab-content li .link {
+    justify-content: center;
+  }
+}
 section.landing__achievments {
   background-image: url(/assets/img/landing/img_achievments-bg.png);
   background-size: cover;
@@ -900,6 +980,7 @@ footer .l-main-wrapper .legal p {
 }
 .magic-image > img {
   opacity: 0;
+  max-width: 100%;
 }
 .magic-image .magic-image-wrapper {
   height: 0;

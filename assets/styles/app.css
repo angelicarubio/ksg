@@ -166,12 +166,24 @@ input::placeholder, textarea::placeholder {
   background-size: cover;
   transform: rotate(45deg);
   margin-left: 10px;
+  transition: all 0.2s ease;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px #000;
+}
+.link:hover:after {
+  background-color: #FFF;
+  background-image: url(/assets/img/icons/ic_link_black.svg);
 }
 .link.--black {
   color: #000;
 }
 .link.--black:after {
   background-image: url(/assets/img/icons/ic_link_black.svg);
+}
+.link.--black:hover:after {
+  background-image: url(/assets/img/icons/ic_link_white.svg);
+  background-color: #000;
+  box-shadow: inset 0 0 0 1px #FFF;
 }
 
 .tab-wrapper .tab-content {

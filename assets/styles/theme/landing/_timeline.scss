@@ -121,6 +121,7 @@ section.landing__timeline {
       }
     }
     .l-main-wrapper {
+      pointer-events: none;
       .slick-controls {
         display: none;
       }

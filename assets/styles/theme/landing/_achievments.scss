@@ -27,6 +27,7 @@ section.landing__achievments {
 }
 @media screen and (max-width: $tablet) {
   section.landing__achievments {
+    background-image: url(/assets/img/landing/img_achievments-bg_mobile.png);
     .l-main-wrapper {
       padding: 60px 0 70px 0;
       h2 {

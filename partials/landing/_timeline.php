@@ -2,87 +2,87 @@
   $slides = [
     [
       "year" => "2008",
-      "title" => "Graduada en Teología y Consejería.",
+      "title" => "Graduada en <br> Teología y <br> Consejería.",
       "description" => "CFNI, Dllas TX",
       "subtitle" => "",
       "image" => "/assets/img/landing/img_timeline-slide-0.png"
     ],
     [
       "year" => "2009",
-      "title" => "Emprendedora, deportista y músico.",
-      "description" => "Basquetbolista por Sonora y Baterista",
+      "title" => "Emprendedora, <br> deportista y músico.",
+      "description" => "Basquetbolista por Sonora <br> y Baterista",
       "subtitle" => "2000 - 2009",
       "image" => "/assets/img/landing/img_timeline-slide-1.png"
     ],
     [
       "year" => "2013",
-      "title" => "",
-      "description" => "",
+      "title" => "Lic. En Nutrición <br> Nutrióloga.",
+      "description" => "INDE, N.L. con participación <br> con atletas en ciclo de <br> Londres 2012",
       "subtitle" => "",
-      "image" => ""
+      "image" => "/assets/img/landing/img_timeline-slide-2.png"
     ],
     [
       "year" => "2013",
-      "title" => "",
-      "description" => "",
+      "title" => "Clinica deportiva <br> 3cientos.",
+      "description" => "Plantando la nutrición <br> deportiva alrededor <br> de Nuevo León",
       "subtitle" => "",
-      "image" => ""
+      "image" => "/assets/img/landing/img_timeline-slide-3.png"
     ],
     [
       "year" => "2014",
-      "title" => "",
+      "title" => "Docente en la <br> Universidad del <br> Valle de México.",
       "description" => "",
       "subtitle" => "",
-      "image" => ""
+      "image" => "/assets/img/landing/img_timeline-slide-4.png"
     ],
     [
       "year" => "2015",
-      "title" => "",
-      "description" => "",
+      "title" => "Se suman más de <br> 50 conferencias.",
+      "description" => "Alrededor de México en <br> diferentes eventos.",
       "subtitle" => "",
-      "image" => ""
+      "image" => "/assets/img/landing/img_timeline-slide-5.png"
     ],
     [
       "year" => "2016",
-      "title" => "",
+      "title" => "Participación <br> en los Juegos <br> Olimpicos de Rio.",
       "description" => "",
       "subtitle" => "",
-      "image" => ""
+      "image" => "/assets/img/landing/img_timeline-slide-6.png"
     ],
     [
       "year" => "2018",
-      "title" => "",
-      "description" => "",
+      "title" => "Conferencista <br> Internacional <br> en sudamérica.",
+      "description" => "Chile, Argentina y Perú.",
       "subtitle" => "",
-      "image" => ""
+      "image" => "/assets/img/landing/img_timeline-slide-7.png"
     ],
     [
       "year" => "2019",
-      "title" => "",
-      "description" => "",
+      "title" => "Maestria en <br> Nutrición Clínica.",
+      "description" => "Docente en ITESM",
       "subtitle" => "",
-      "image" => ""
+      "image" => "/assets/img/landing/img_timeline-slide-8.png"
     ],
     [
       "year" => "2020",
-      "title" => "",
-      "description" => "",
+      "title" => "Laboratorio <br> Tr3slab.",
+      "description" => "Ha atendido a mas de <br> 30,000 mil pacientes.",
       "subtitle" => "",
-      "image" => ""
+      "image" => "/assets/img/landing/img_timeline-slide-9.png"
     ],
     [
       "year" => "2021",
-      "title" => "",
-      "description" => "",
+      "title" => "Tokyo 2020.",
+      "description" => "Midei Mx",
       "subtitle" => "",
-      "image" => ""
+      "image" => "/assets/img/landing/img_timeline-slide-10.png"
     ],
     [
       "year" => "2022",
-      "title" => "",
+      "title" => "Primer libro e <br> impulso de marca <br> personal.",
       "description" => "",
       "subtitle" => "",
-      "image" => ""
+      "image" => "/assets/img/landing/img_timeline-slide-11.png"
     ]
   ];
 ?>

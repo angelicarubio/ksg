@@ -716,6 +716,9 @@ section.landing__achievments .l-main-wrapper .wrapper div img {
 }
 
 @media screen and (max-width: 960px) {
+  section.landing__achievments {
+    background-image: url(/assets/img/landing/img_achievments-bg_mobile.png);
+  }
   section.landing__achievments .l-main-wrapper {
     padding: 60px 0 70px 0;
   }
@@ -858,6 +861,9 @@ section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots li b
 @media screen and (max-width: 960px) {
   section.landing__timeline .slick [data-slick-index="0"] {
     background-position: 70% center;
+  }
+  section.landing__timeline .l-main-wrapper {
+    pointer-events: none;
   }
   section.landing__timeline .l-main-wrapper .slick-controls {
     display: none;
@@ -1091,7 +1097,10 @@ footer .l-main-wrapper .legal p {
 }
 .magic-image > img {
   opacity: 0;
+}
+.magic-image img {
   max-width: 100%;
+  width: 100%;
 }
 .magic-image .magic-image-wrapper {
   height: 0;

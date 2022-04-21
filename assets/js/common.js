@@ -78,7 +78,8 @@ function initTimeline() {
     dots: true,
     appendDots: parent.find('.dots'),
     variableWidth: true,
-    slidesToShow: 1
+    slidesToShow: 1,
+    variableWidth: true
   });
 }
 
@@ -167,6 +168,11 @@ function magicTitles(controller) {
     const wrappedWords = [];
 
     $.each(words, function(_, word) {
+      if (word === '<br>') {
+        wrappedWords.push(word);
+        return;
+      }
+
       wrappedWords.push(`<span class="magic-title-wrapper"><span>${word}</span></span>`);
     })
 

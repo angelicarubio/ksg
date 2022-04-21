@@ -2,7 +2,10 @@
   position: relative;
   > img {
     opacity: 0;
+  }
+  img {
     max-width: 100%;
+    width: 100%;
   }
   .magic-image-wrapper {
     height: 0;

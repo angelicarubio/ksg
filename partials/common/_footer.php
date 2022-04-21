@@ -10,13 +10,13 @@
       <aside>
         <img src="/assets/img/landing/logo_white.svg" alt="Karina Salazar González">
         <div class="social">
-          <a href="#">
+          <a href="https://www.facebook.com/nutriologaksalazar/photos/?ref=page_internal" target="_blank">
             <img src="/assets/img/icons/ic_facebook_white.svg" alt="Facebook">
           </a>
-          <a href="#">
+          <a href="https://www.instagram.com/karinasalazargzz/?hl=es-la" target="_blank">
             <img src="/assets/img/icons/ic_instagram_white.svg" alt="Instagram">
           </a>
-          <a href="#">
+          <a href="https://www.linkedin.com/in/karina-salazar-gonzález-3a086183/?locale=en_US" target="_blank">
             <img src="/assets/img/icons/ic_linkedin_white.svg" alt="LinkedIn">
           </a>
         </div>

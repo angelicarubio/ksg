@@ -116,8 +116,34 @@ section.landing__timeline {
 @media screen and (max-width: $tablet) {
   section.landing__timeline {
     .slick {
-      [data-slick-index="0"] {
+      .slick-slide {
+        background-position: 75% center;
+      }
+      [data-slick-index="0"],
+      [data-slick-index="12"] {
         background-position: 70% center;
+      }
+      [data-slick-index="5"] {
+        background-position: 55% center;
+      }
+      [data-slick-index="6"] {
+        background-position: 60% center;
+      }
+      [data-slick-index="7"] {
+        background-position: 65% center;
+      }
+      [data-slick-index="8"] {
+        background-position: 63% center;
+      }
+      [data-slick-index="9"] {
+        background-position: 60% center;
+      }
+      [data-slick-index="10"] {
+        background-position: 55% center;
+      }
+      [data-slick-index="11"],
+      [data-slick-index="-1"] {
+        background-position: 80% center;
       }
     }
     .l-main-wrapper {

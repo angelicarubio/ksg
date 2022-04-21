@@ -859,8 +859,34 @@ section.landing__timeline .l-main-wrapper .slick-controls .dots .slick-dots li b
 }
 
 @media screen and (max-width: 960px) {
-  section.landing__timeline .slick [data-slick-index="0"] {
+  section.landing__timeline .slick .slick-slide {
+    background-position: 75% center;
+  }
+  section.landing__timeline .slick [data-slick-index="0"],
+section.landing__timeline .slick [data-slick-index="12"] {
     background-position: 70% center;
+  }
+  section.landing__timeline .slick [data-slick-index="5"] {
+    background-position: 55% center;
+  }
+  section.landing__timeline .slick [data-slick-index="6"] {
+    background-position: 60% center;
+  }
+  section.landing__timeline .slick [data-slick-index="7"] {
+    background-position: 65% center;
+  }
+  section.landing__timeline .slick [data-slick-index="8"] {
+    background-position: 63% center;
+  }
+  section.landing__timeline .slick [data-slick-index="9"] {
+    background-position: 60% center;
+  }
+  section.landing__timeline .slick [data-slick-index="10"] {
+    background-position: 55% center;
+  }
+  section.landing__timeline .slick [data-slick-index="11"],
+section.landing__timeline .slick [data-slick-index="-1"] {
+    background-position: 80% center;
   }
   section.landing__timeline .l-main-wrapper {
     pointer-events: none;

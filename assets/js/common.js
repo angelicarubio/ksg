@@ -79,7 +79,8 @@ function initTimeline() {
     appendDots: parent.find('.dots'),
     variableWidth: true,
     slidesToShow: 1,
-    variableWidth: true
+    variableWidth: true,
+    touchThreshold: 1000
   });
 }
 

@@ -1,0 +1,53 @@
+.modal-content[data-modal="contact"] {
+  div {
+    width: 100%;
+    &:nth-of-type(1) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(/assets/img/landing/img_contact-modal-bg.png);
+      background-size: cover;
+      height: 210px;
+    }
+    &:nth-of-type(2) {
+      display: flex;
+      flex-flow: column;
+      padding: 30px 45px 50px 45px;
+      text-align: center;
+      h1 {
+        color: #000;
+        font-size: 40px;
+        line-height: 40px;
+        margin: 0;
+      };
+      p {
+        margin: 20px 0;
+        color: #6F6F6F;
+      }
+      span {
+        width: 100px;
+        height: 2px;
+        background-color: #989595;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+@media screen and (max-width: $tablet) {
+  .modal-content[data-modal="contact"] {
+    div {
+      &:nth-of-type(1) {
+        height: 160px;
+        img {
+          max-width: 70px;
+        }
+      }
+      &:nth-of-type(2) {
+        h1 {
+          font-size: 25px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}

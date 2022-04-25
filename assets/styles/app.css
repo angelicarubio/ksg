@@ -193,6 +193,38 @@ input::placeholder, textarea::placeholder {
   display: block;
 }
 
+section.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 15;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+section.modal-wrapper.--active {
+  opacity: 1;
+  pointer-events: all;
+}
+section.modal-wrapper .modal-content {
+  width: 680px;
+  max-width: 80vw;
+  background-color: #FFF;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+section.modal-wrapper .modal-content.--active {
+  opacity: 1;
+  pointer-events: all;
+}
+
 .l-main-wrapper {
   width: 80vw;
   max-width: 960px;
@@ -1028,6 +1060,52 @@ section.landing__contact .l-main-wrapper form button[type=submit] {
   }
   section.landing__contact .l-main-wrapper form .col-2 > *:not(:last-child) {
     margin-bottom: 10px;
+  }
+}
+.modal-content[data-modal=contact] div {
+  width: 100%;
+}
+.modal-content[data-modal=contact] div:nth-of-type(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/assets/img/landing/img_contact-modal-bg.png);
+  background-size: cover;
+  height: 210px;
+}
+.modal-content[data-modal=contact] div:nth-of-type(2) {
+  display: flex;
+  flex-flow: column;
+  padding: 30px 45px 50px 45px;
+  text-align: center;
+}
+.modal-content[data-modal=contact] div:nth-of-type(2) h1 {
+  color: #000;
+  font-size: 40px;
+  line-height: 40px;
+  margin: 0;
+}
+.modal-content[data-modal=contact] div:nth-of-type(2) p {
+  margin: 20px 0;
+  color: #6F6F6F;
+}
+.modal-content[data-modal=contact] div:nth-of-type(2) span {
+  width: 100px;
+  height: 2px;
+  background-color: #989595;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 960px) {
+  .modal-content[data-modal=contact] div:nth-of-type(1) {
+    height: 160px;
+  }
+  .modal-content[data-modal=contact] div:nth-of-type(1) img {
+    max-width: 70px;
+  }
+  .modal-content[data-modal=contact] div:nth-of-type(2) h1 {
+    font-size: 25px;
+    line-height: 30px;
   }
 }
 footer {

@@ -13,7 +13,7 @@
   $mail->Port = 587;
   $mail->SMTPAuth = true;
   $mail->Username = 'pruebas@tonico.mx';
-  $mail->Password = 'Pruebas.000#';
+  $mail->Password = 'T{)7!erlo1Y';
   $mail->SMTPSecure = 'tls';
   $mail->CharSet = "UTF-8";
 
@@ -33,7 +33,7 @@
   $mail->AltBody = "Nombre: $name\nEmail: $email\nMensaje: $message";
 
   if ($mail->send()) {
-    header('Location: http://'.$_SERVER['HTTP_HOST'].$_POST["return"]);
+    header('Location: /?contactSent=true');
   } else {
     echo 'Message could not be sent.';
     echo 'Mailer Error: ' . $mail->ErrorInfo;

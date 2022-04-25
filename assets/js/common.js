@@ -12,11 +12,35 @@ $(document).ready(function() {
   magicQuotesHandler(mainController);
   initMobileVenturesSlick();
   toggleMobileMenu();
+  contactModal();
+  closeModal();
 
   window.addEventListener('resize', debounce(function(e){
     magicQuotesHandler(mainController);
   }));
 });
+
+function closeModal() {
+  $('.modal-wrapper.--active').click(function(e){
+    if(e.target != this) return;
+
+    $('.modal-wrapper.--active, .modal-content.--active').removeClass('--active');
+  });
+}
+
+function contactModal() {
+  const searchParams = new URLSearchParams(window.location.search);
+
+  if (searchParams.has('contactSent')) {
+    const status = searchParams.get('contactSent');
+
+    if (status == 'true') {
+      $('.modal-content[data-modal="contact"]').addClass('--active');
+    }
+
+    $('.modal-wrapper').addClass('--active');
+  }
+}
 
 function toggleMobileMenu() {
   $('#mobile-menu-toggle').click(function() {

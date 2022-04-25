@@ -1,4 +1,5 @@
 <?php
+    include($_SERVER['DOCUMENT_ROOT'].'/partials/common/_contact-modal.php');
     include($_SERVER['DOCUMENT_ROOT'].'/partials/common/_head.php');
     include($_SERVER['DOCUMENT_ROOT'].'/partials/landing/_nav.php');
     include($_SERVER['DOCUMENT_ROOT'].'/partials/landing/_hero.php');

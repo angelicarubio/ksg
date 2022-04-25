@@ -58,6 +58,10 @@ html, body {
   margin: 0;
 }
 
+body {
+  opacity: 0;
+}
+
 * {
   box-sizing: border-box;
 }

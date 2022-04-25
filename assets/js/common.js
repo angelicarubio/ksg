@@ -14,11 +14,16 @@ $(document).ready(function() {
   toggleMobileMenu();
   contactModal();
   closeModal();
+  loaded();
 
   window.addEventListener('resize', debounce(function(e){
     magicQuotesHandler(mainController);
   }));
 });
+
+function loaded() {
+  $('body').delay(1000).animate({ opacity: 1 }, 700);
+}
 
 function closeModal() {
   $('.modal-wrapper.--active').click(function(e){

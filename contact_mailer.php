@@ -24,7 +24,7 @@
 
   //Recipients
   $mail->setFrom($email, $name);
-  $mail->addAddress('helloribs@gmail.com', 'KSG');
+  $mail->addAddress('pruebas@tonico.mx', 'KSG');
 
   //Content
   $mail->isHTML(true);

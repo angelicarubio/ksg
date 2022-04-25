@@ -660,12 +660,30 @@ section.landing__ventures .l-main-wrapper .tab-wrapper .tab-content li {
   grid-template-rows: 150px auto auto;
   text-align: center;
 }
+section.landing__ventures .l-main-wrapper .tab-wrapper .tab-content li:hover .img-wrapper img:nth-of-type(1) {
+  opacity: 0;
+}
+section.landing__ventures .l-main-wrapper .tab-wrapper .tab-content li:hover .img-wrapper img:nth-of-type(2) {
+  opacity: 1;
+}
 section.landing__ventures .l-main-wrapper .tab-wrapper .tab-content li .img-wrapper {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 150px;
   width: 100%;
+}
+section.landing__ventures .l-main-wrapper .tab-wrapper .tab-content li .img-wrapper img {
+  max-width: 200px;
+  transition: opacity 0.2s ease;
+}
+section.landing__ventures .l-main-wrapper .tab-wrapper .tab-content li .img-wrapper img:nth-of-type(2) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
 }
 section.landing__ventures .l-main-wrapper .tab-wrapper .tab-content li p {
   margin: 30px 0;

@@ -9,7 +9,8 @@
       <ul class="tab-content --active slick">
         <li>
           <div class="img-wrapper">
-            <img src="/assets/img/landing/logo_3cientos_color.png" alt="3ientos">
+            <img src="/assets/img/landing/logo_3cientos_bn.png" alt="3cientos">
+            <img src="/assets/img/landing/logo_3cientos_color.png" alt="3cientos">
           </div>
           <p>
             Es una clínica deportiva con las principales ciencias de la salud en
@@ -20,6 +21,7 @@
         </li>
         <li>
           <div class="img-wrapper">
+            <img src="/assets/img/landing/logo_tr3slab_bn.png" alt="Tr3s Lab">
             <img src="/assets/img/landing/logo_tr3slab_color.png" alt="Tr3s Lab">
           </div>
           <p>
@@ -30,6 +32,7 @@
         </li>
         <li>
           <div class="img-wrapper">
+            <img src="/assets/img/landing/logo_midei_bn.png" alt="Midei">
             <img src="/assets/img/landing/logo_midei_color.png" alt="Midei">
           </div>
           <p>
@@ -46,7 +49,8 @@
         <li></li>
         <li>
           <div class="img-wrapper">
-            <img src="/assets/img/landing/logo_spotify_color.svg" alt="Spotify">
+            <img src="/assets/img/landing/logo_spotify_bn.png" alt="Spotify">
+            <img src="/assets/img/landing/logo_spotify_color.png" alt="Spotify">
           </div>
           <p>
             Pruebas de COVID_19 a domicilio. Contamos con la mejor calidad de

@@ -15,11 +15,33 @@ $(document).ready(function() {
   contactModal();
   closeModal();
   loaded();
+  bindContactFormCaptcha();
 
   window.addEventListener('resize', debounce(function(e){
     magicQuotesHandler(mainController);
   }));
 });
+
+function bindContactFormCaptcha() {
+  $('#contact-form').submit(function(e) {
+    e.preventDefault();
+    grecaptcha.reset();
+    grecaptcha.execute();
+  });
+}
+
+function recaptchaSubmit(token) {
+  $.ajax(
+    'http://api.ribs.design/clients/recaptcha',
+    {
+      method: 'GET',
+      data: { app: 'ksg', token: token },
+      success: (response) => {
+        if (response['success']) $('#contact-form').off('submit').submit();
+      }
+    }
+  );
+}
 
 function loaded() {
   $('body').delay(1000).animate({ opacity: 1 }, 700);

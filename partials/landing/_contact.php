@@ -23,6 +23,12 @@
           data-callback='recaptchaSubmit'
           data-size='invisible'>
         </div>
+        <p>
+          <small>This site is protected by reCAPTCHA and the Google
+            <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+            <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+          </small>
+        </p>
         <button type="submit" class="link --black">
           Enviar
         </button>

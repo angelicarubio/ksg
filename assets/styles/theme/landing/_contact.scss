@@ -21,6 +21,11 @@ section.landing__contact {
     }
   }
 }
+
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
 @media screen and (max-width: $tablet) {
   section.landing__contact {
     .l-main-wrapper {

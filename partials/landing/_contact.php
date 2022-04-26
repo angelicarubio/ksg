@@ -8,7 +8,7 @@
           <input type="text" name="name" id="name" placeholder="Nombre." required>
         </label>
         <label for="email">
-          <input type="text" name="email" id="email" placeholder="Correo electrónico." required>
+          <input type="email" name="email" id="email" placeholder="Correo electrónico." required>
         </label>
       </div>
       <div class="col-1">

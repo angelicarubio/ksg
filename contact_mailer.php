@@ -1,12 +1,13 @@
 <?php
   use PHPMailer\PHPMailer\PHPMailer;
   use PHPMailer\PHPMailer\Exception;
-  require 'vendor/autoload.php';
+
+  require __DIR__ . 'vendor/autoload.php';
 
   $mail = new PHPMailer\PHPMailer\PHPMailer();
 
   //Server settings
-  // $mail->SMTPDebug = 2;
+  $mail->SMTPDebug = 2;
   // $mail->Debugoutput = 'html';
   $mail->isSMTP();
   $mail->Host = 'bmdc-m8vn.accessdomain.com';

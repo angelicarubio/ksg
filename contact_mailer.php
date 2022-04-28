@@ -3,7 +3,7 @@
   use PHPMailer\PHPMailer\Exception;
   require 'vendor/autoload.php';
 
-  $mail = new PHPMailer(true);
+  $mail = new PHPMailer\PHPMailer\PHPMailer();
 
   //Server settings
   // $mail->SMTPDebug = 2;
@@ -24,7 +24,7 @@
 
   //Recipients
   $mail->setFrom($email, $name);
-  $mail->addAddress('pruebas@tonico.mx', 'KSG');
+  $mail->addAddress('helloribs@gmail.cm', 'KSG');
 
   //Content
   $mail->isHTML(true);

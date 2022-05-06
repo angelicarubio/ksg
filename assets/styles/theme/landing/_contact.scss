@@ -15,6 +15,10 @@ section.landing__contact {
      }
     form {
       margin-top: 70px;
+      &.--disabled {
+        pointer-events: none;
+        opacity: 0.4;
+      }
       button[type="submit"] {
         margin: 20px auto 0 auto;
       }

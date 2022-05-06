@@ -25,6 +25,7 @@ $(document).ready(function() {
 function bindContactFormCaptcha() {
   $('#contact-form').submit(function(e) {
     e.preventDefault();
+    $('#contact-form').addClass('--disabled');
     grecaptcha.reset();
     grecaptcha.execute();
   });

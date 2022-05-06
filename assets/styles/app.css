@@ -1071,6 +1071,10 @@ section.landing__contact .l-main-wrapper p {
 section.landing__contact .l-main-wrapper form {
   margin-top: 70px;
 }
+section.landing__contact .l-main-wrapper form.--disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
 section.landing__contact .l-main-wrapper form button[type=submit] {
   margin: 20px auto 0 auto;
 }

@@ -1,6 +1,6 @@
 <?php
-  require ( __DIR__ . '/vendor/phpmailer/phpmailer/src/PHPMailer' );
-  require ( __DIR__ . '/vendor/phpmailer/phpmailer/src/Exception' );
+  require ( __DIR__ . '/vendor/phpmailer/phpmailer/src/PHPMailer.php' );
+  require ( __DIR__ . '/vendor/phpmailer/phpmailer/src/Exception.php' );
   require ( __DIR__ . '/vendor/autoload.php' );
 
   $mail = new PHPMailer\PHPMailer\PHPMailer();

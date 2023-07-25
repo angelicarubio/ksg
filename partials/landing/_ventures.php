@@ -17,7 +17,7 @@
             el deporte. Se otorgan herramientas para evitar los riesgos que se
             generan al realizar deporte y actividad física.
           </p>
-          <a href="#" class="link">3cientos</a>
+          <a href="https://3cientos.mx/" target="_blank" class="link">3cientos</a>
         </li>
         <li>
           <div class="img-wrapper">
@@ -25,10 +25,10 @@
             <img src="/assets/img/landing/logo_tr3slab_color.png" alt="Tr3s Lab">
           </div>
           <p>
-            Pruebas de COVID_19 a domicilio. Contamos con la mejor calidad de
+            Pruebas de COVID 19 a domicilio. Contamos con la mejor calidad de
             efectividad en el resultado de la Prueba mayor al 95%.
           </p>
-          <a href="#" class="link">Tr3s Lab</a>
+          <a href="https://tr3slab.com/" target="_blank" class="link">Tr3s Lab</a>
         </li>
         <li>
           <div class="img-wrapper">
@@ -36,11 +36,11 @@
             <img src="/assets/img/landing/logo_midei_color.png" alt="Midei">
           </div>
           <p>
-            ¡Tú asistente personal!
+            ¡Tu asistente personal!
             <br>
-            Proximamente más noticias
+            Próximamente más noticias
           </p>
-          <a href="#" class="link">Midei MX</a>
+          <a href="https://www.midei.mx/home" target="_blank" class="link">Midei MX</a>
         </li>
       </ul>
       <div class="mobile-dots"></div>
@@ -56,7 +56,7 @@
             Pruebas de COVID_19 a domicilio. Contamos con la mejor calidad de
             efectividad en el resultado de la Prueba mayor al 95%.
           </p>
-          <a href="#" class="link">Mis podcast</a>
+          <a href="https://open.spotify.com/playlist/4gz579eruEO4Y9zr94KUsM" class="link">Mis podcast</a>
         </li>
       </ul>
     </div>

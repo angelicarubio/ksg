@@ -18,7 +18,7 @@
             Empresarios mexicanos.
           </p>
           <p>
-            Pacientes alrededor de Latinoamerica y Europa.
+            Pacientes alrededor de Latinoamérica y Europa.
           </p>
         </div>
         <div class="image-wrapper">
@@ -44,9 +44,7 @@
       <div class="tab-content">
         <div class="content-wrapper">
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
-            est vero quisquam inventore tenetur, perferendis saepe magnam amet
-            eius ad adipisci iusto fuga voluptatum velit ullam facilis commodi!
+            Karina inició su carrera de conferencista a muy corta edad, apenas tenía 20 años cuando ya daba conferencias de espiritualidad y estilo de vida. <br><br>Cuando empezó en el mundo de la nutrición inmediatamente recibió  invitaciones, en el ámbito académico y empresarial.<br><br> A la fecha ha dado más de 100 conferencias alrededor de México y Latinoamérica y con el cambio mundial post pandemia, ahora también de manera remota, alcanzando una plataforma de mas de 100,000 oyentes a lo largo de su carrera.
           </p>
         </div>
         <div class="image-wrapper">

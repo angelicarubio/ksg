@@ -23,14 +23,14 @@
     ],
     [
       "year" => "2013",
-      "title" => "Clinica deportiva <br> 3cientos.",
+      "title" => "Clínica deportiva <br> 3cientos.",
       "description" => "Plantando la nutrición <br> deportiva alrededor <br> de Nuevo León",
       "subtitle" => "",
       "image" => "/assets/img/landing/img_timeline-slide-3.png"
     ],
     [
       "year" => "2014",
-      "title" => "Docente en la <br> Universidad del <br> Valle de México.",
+      "title" => "Docente en la <br> Universidad del <br> Valle de México <br> y Tec de Mty",
       "description" => "",
       "subtitle" => "",
       "image" => "/assets/img/landing/img_timeline-slide-4.png"
@@ -44,7 +44,7 @@
     ],
     [
       "year" => "2016",
-      "title" => "Participación <br> en los Juegos <br> Olimpicos de Rio.",
+      "title" => "Participación <br> en los Juegos <br> Olímpicos de Río.",
       "description" => "",
       "subtitle" => "",
       "image" => "/assets/img/landing/img_timeline-slide-6.png"
@@ -58,7 +58,7 @@
     ],
     [
       "year" => "2019",
-      "title" => "Maestria en <br> Nutrición Clínica.",
+      "title" => "Maestría en <br> Nutrición Clínica.",
       "description" => "Docente en ITESM",
       "subtitle" => "",
       "image" => "/assets/img/landing/img_timeline-slide-8.png"
@@ -66,7 +66,7 @@
     [
       "year" => "2020",
       "title" => "Laboratorio <br> Tr3slab.",
-      "description" => "Ha atendido a mas de <br> 30,000 mil pacientes.",
+      "description" => "Ha atendido a más de <br> 30,000 mil pacientes.",
       "subtitle" => "",
       "image" => "/assets/img/landing/img_timeline-slide-9.png"
     ],

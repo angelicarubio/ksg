@@ -5,19 +5,19 @@
       <div>
         <img src="/assets/img/icons/ic_hat_white.svg" alt="Licencia en Nutrición">
         <p>
-          Licencia en Nutrición por la Universidad del Valle de México
+          Licenciatura en Nutrición por la Universidad del Valle de México
         </p>
       </div>
       <div>
         <img src="/assets/img/icons/ic_olympics_white.svg" alt="Juegos Olímpicos Tokio 2020">
         <p>
-          Nutrióloga FMND en los Juegos Olímpicos Tokio 2020
+          Nutrióloga en los Juegos Olímpicos Tokyo 2020
         </p>
       </div>
       <div>
         <img src="/assets/img/icons/ic_certificate_white.svg" alt="Certificados">
         <p>
-          Certificado en nutrición deportiva por la AMSI y FMND
+          Certificado en nutrición deportiva por la AMSI, FMND y ISAK nivel 3 
         </p>
       </div>
       <div>

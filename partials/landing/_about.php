@@ -8,16 +8,16 @@
       </div>
       <div>
         <h2>Sobre mí</h2>
-        <h1 class="magic-title">¿Quién es <strong>Karina</strong> <strong>Salazar</strong> <strong>Gonzalez</strong>?</h1>
+        <h1 class="magic-title">¿Quién es <strong>Karina</strong> <strong>Salazar</strong> <strong>González</strong>?</h1>
         <p>
-          Nutrióloga mexicana con una maestria en nutrición clínica, especialista
+          Nutrióloga mexicana con una maestría en nutrición clínica, especialista
           en nutrición deportiva, ISAK Nivel 3, 3 ciclos olímpicos y la primer mujer
-          nutrióloga en asistir a unos juegos olímpicos como nutrióloga de la
-          delegación mexicana en Tokyo 2020, más de 10 años de experciencia con
+          en asistir a unos juegos olímpicos como nutrióloga de la
+          delegación mexicana en Tokyo 2020, más de 10 años de experiencia con
           más de 35 mil casos atendidos al 2022.
         </p>
         <p>
-          Soñadora y fiel creyente que México será un mejor país en terminos de
+          Soñadora y fiel creyente que México será un mejor país en términos de
           salud y alimentación.
         </p>
       </div>
